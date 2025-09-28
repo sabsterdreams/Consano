@@ -1,0 +1,101 @@
+<html lang="en">
+<div class="header">
+<a href="Consano.html"> <img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+<nav>
+  
+  <a href="tale.html">The Tale of abuse</a>
+  <a href="confrontation.html">Confrontation</a>
+    <a href="gossip.html">Gossip</a>
+	<a href="defend.html">Defend</a>
+	<a href="jealous.html">Jealousy</a>
+	<a href="healing.html">Healing</a>
+	<a href="resources.html">Resources</a>
+	<a href="about.html">About</a>
+</nav>
+
+</div>
+
+
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale= 1.0 charset="UTF-8"/> 
+
+</head>
+<body>
+  <div class="container">
+  <h1 class="info-card" >Build your shield against emotional abuse</h1>
+<p> Your shield is what protects your inner peace. It’s built from pieces of life lessons and wisdom. 
+What’s great is that you can learn about these now to save you from going through more difficult experiences </p> 
+
+<p> Standing up for yourself doesn’t have to look the same for every scenario.</p> 
+<p> Here are some shields you may want to add to your collection </p>
+   <div class="imtextdark">
+<img src="images/ask.png" alt="anti-bullying" width="200">
+<p> For when boundaries are broken , asking 
+‘What do you mean by that?’ or ‘What did you say?’ 
+or ‘I don’t like being spoken to like that’
+ can help catch the behaviour. </p> 
+</div>
+<div class="imtextdark">
+<img src="images/trust.png" alt="anti-bullying" width="200">
+<p> This doesn’t have to be for telling the people off, but rather for getting more tailored advice and support for yourself.  </p> 
+</div>
+<div class="imtextdark">
+<img src="images/new.png" alt="anti-bullying" width="200" height="200">
+<p>  Knowing you have friends outside of school can make managing this so much easier as you feel more secure. Join a new club, start volunteering. Join free virtual or in person work experience programmes. These are great as they connect you safely  to those you may not have ever met on your walk to school, but also gives you skills that you can carry into your future and university application. Plus, they serve as a good distraction to the drama.</p> 
+</div>
+<div style="text-align: center;">
+  <img src="images/shieldstwo.png" alt="anti-bullying" width="600">
+</div>
+
+<div style="text-align: center;">
+  <img src="images/threeshields.png" alt="anti-bullying" width="600">
+</div>
+
+<div style="text-align: center;">
+  <img src="images/shieldstwoo.png" alt="anti-bullying" width="600">
+</div>
+
+<p>Truth be told, sometimes people are just unlucky. It’s never your fault that you’re being treated poorly, as you don’t deserve to be. </p>
+
+<h2 class="info-card" >What if I didn't do this when this happened?</h2>
+<p>Don’t beat yourself up if you have made mistakes in how you react to emotional abuse. You weren’t expecting it so if you’re not well equip you can’t blame yourself for doing what you could. You’ve already You’re still here, and that’s great!  </p>
+<h2 class="info-card" >What if it doesn't work</h2>
+<p>Some people are so cunning and manipulative ( or insecure), that they are literally wired to seek chaos.This is why walking away and focusing on healing yourself can often be the best solution  </p>
+<div class="activity-box">
+  <strong>Activity:</strong> Do you have any life lessons you've learnt that help you today? Draw some shields and write them inside. 
+</div>
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.info-card');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // Optional: fade in only once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+</script>
+
+</html>

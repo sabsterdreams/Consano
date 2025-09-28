@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="header">
+<a href="Consano.html"> <img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+<nav>
+  
+  <a href="tale.html">The Tale of abuse</a>
+  <a href="confrontation.html">Confrontation</a>
+    <a href="gossip.html">Gossip</a>
+	<a href="defend.html">Defend</a>
+	<a href="jealous.html">Jealousy</a>
+	<a href="healing.html">Healing</a>
+	<a href="resources.html">Resources</a>
+	<a href="about.html">About</a>
+</nav>
+
+</div>
+
+
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale= 1.0 charset="UTF-8"/> 
+
+</head>
+<body>
+  <div class="container">
+  <h1 class="info-card" >Jealousy and Competition</h1>
+   <h2 >"They're jealous of you"</h2>
+   <p> It’s a common saying, but often times it can be true. 
+   Jealous friends are everywhere, and they are the worst kind.
+   Slowly chipping away at your own confidence and making you question 
+   whether you are going insane for feeling offended.</p>
+   
+   <div class="smallcontainer">
+   <p> Seems to leave you out or ignore you  </p>
+   </div>
+      <div class="smallcontainer">
+   <p> Very competitive person </p>
+   </div>
+      <div class="smallcontainer">
+   <p>Constantly looking and asking about your test scores</p>
+   </div>
+      <div class="smallcontainer">
+   <p> Goes quiet when you achieve something or tries to minimise it  </p>
+   </div>
+      <div class="smallcontainer">
+   <p> Their behaviour changes for the worst as you improve yourself or do better than them at something</p>
+   </div>
+        <div class="smallcontainer">
+   <p> Makes a big deal out of everything they achieve even if it’s small  </p>
+   </div>
+         <div class="smallcontainer">
+   <p> Has a fear of failure  </p>
+   
+   </div>
+   
+    <div style="text-align:center" >
+<img src="images/jealous.png" alt="anti-bullying" width="300">
+</div> 
+         <div class="smallcontainer">
+   <p> Gives you dirty looks, maybe whilst adjusting their appearance </p>
+   </div>
+         <div class="smallcontainer">
+   <p> Passive aggressive comments  ( little jabs that aren’t as noticeable as direct mean words)  </p>
+   </div>
+         <div class="smallcontainer">
+   <p> Copies your style or things you own </p>
+   </div>
+          <div class="smallcontainer">
+   <p> Questions your abilities or choices </p>
+   </div>
+          <div class="smallcontainer">
+   <p> Acts judgemental when you express your happiness or passions  </p>
+   </div>
+          <div class="smallcontainer">
+   <p> Starts lots of arguments with you or about you, accusing you of doing things you didn’t</p>
+   </div>
+          <div class="smallcontainer">
+   <p> Gets annoyed or acts cold when you chose to hang out with other people - trying to isolate you from others </p>
+   </div>
+   
+ <p>When these behaviours start working together, they can be incredibly distracting, putting you away from focusing 
+ on more important things like your studies. 
+ This behaviour is largely out of your control.  </p> 
+
+ <h1 class="info-card"> What to do </h1>
+ 
+ <p> Other than distancing yourself from these types of people, don’t tell them about your goals and achievements. These add fuel to their hatred and should only be for those who truly support you
+ <br><br> Jealous people want to have social groups that buy into a fantasy about them being the best of the best. They find others achievements threats to their status.  </p> 
+  <h2 class="info-card"> Don't dim your light </h2>
+  <p> True friends will truly celebrate you and admire you for you positive best traits rather than try to put you down. 
+  That’s why it is important to gravitate towards those kinds of people rather than sticking with those who are obviously jealous of you.
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.info-card');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // Optional: fade in only once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+</script>
+</html>

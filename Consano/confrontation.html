@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="header">
+<a href="Consano.html"> <img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+<nav>
+  
+  <a href="tale.html">The Tale of abuse</a>
+  <a href="confrontation.html">Confrontation</a>
+    <a href="gossip.html">Gossip</a>
+	<a href="defend.html">Defend</a>
+	<a href="jealous.html">Jealousy</a>
+	<a href="healing.html">Healing</a>
+	<a href="resources.html">Resources</a>
+	<a href="about.html">About</a>
+</nav>
+
+</div>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confrontation - What You Could Expect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+  <div class="container">
+    <h1 class="info-card" >Confrontation - What you could expect</h1>
+    <p>Standing up for yourself is a remarkable, brave thing to do. However with emotionally abusive individuals, you may leave a conversation where you intended to ‘clear the air’ feeling :</p>
+    <ul>
+      <li>Confused</li>
+      <li>Even more Upset</li>
+      <li>That the friendship is over</li>
+      <li>Scared for further gossip spreading</li>
+      <li>Like you were the problem all along</li>
+      <li>Questioning whether you were just imagining things</li>
+    </ul>
+	
+	<div class="activity-box">
+  <strong>Activity:</strong> Write with arrows down your intentions going into the conversation, how you expected to feel after the conversation and how you actually felt after the conversation. Does it make sense or seem strange?
+</div>
+	
+
+    <p></p>
+    <p>This is not your fault. It’s not your fault that your communication, a valuable trait, was not appreciated or treated with respect. In healthy friendships, clear calm communication explaining how you feel will be met with equally calm responses. Your friends want you to be happy. Your true friends don’t want to make you feel upset. Your friends will approach your concerns with understanding.  Deeply insecure or manipulative people will not.</p>
+    <p>But what might have happened in the conversation? Here are some common abusive reactions you may have encountered. Reading through this will hopefully leave you feeling more validated that you aren’t going crazy and were actually just hurt more.</p>
+  
+  
+  
+    <p></p>
+  <div class="circle-container">
+<h2 style="margin-top: 3rem; text-align: center;" class="info-card">Abusive Reactions</h2>
+<h3> To learn more about each one, click on the circles. </h3>
+
+<div class="circle-grid">
+
+  <div class="circle" onclick="showPopup(0)">Changing the subject</div>
+  <div class="circle" onclick="showPopup(1)">Your accountability</div>
+  <div class="circle" onclick="showPopup(2)">Minimisation</div>
+  <div class="circle" onclick="showPopup(3)">Patronisation</div>
+  <div class="circle" onclick="showPopup(4)">Denial</div>
+  <div class="circle" onclick="showPopup(5)">Performative Care</div>
+  <div class="circle" onclick="showPopup(6)">Victim Offender Flip</div>
+</div>
+
+
+
+  </div>
+
+  <div class="overlay" onclick="hidePopup()"></div>
+
+  <div id="popup" class="popup">
+    <h2 id="popupTitle"></h2>
+    <p id="popupContent"></p>
+    <button class="back-button" onclick="hidePopup()">Back</button>
+  </div>
+
+  <script>
+    const data = [
+      {
+        title: "Changing the subject",
+        content: 
+		" Dragging other people into the conversation, whether literally or just mentioning them. You may have been accused of hurting someone else and that is used to excuse their own behaviour towards you even if they weren’t involved or know the full story."
+      },
+      {
+        title: "Your accountability isn’t enough",
+        content: " Maybe you slipped up once, and you apologised. But the conversation seems to have steered to being entirely about that. And everytime you show humiltiy and own up to things ( which are incredibly admirable traits) they keep pushing you to be blamed for more. They try to make their behaviour seem like it stemmed from a reaction to you. If someone is getting angrier when you are descalating things, it’s a worrying sign of their own ability to manage their emotions."
+      },
+      {
+        title: "Minimisation",
+        content: "The extent of your suffering is not seen as a big deal. You may be accused of being too sensitive, or they may express annoyance for you even bringing up the issue. The goal is to make you question your own boundaries. But remember, people shouldn’t invalidate your boundaries as you are the only one who can change them. You can leave people who cross them but they can’t force you to remove yours."
+      },
+      {
+        title: "Patronisation",
+        content: " Maybe they made you feel stupid for the things you brought up. Little comments, rolls of the eyes and condescending remarks that feel belittling and that they are superior to you morally. Their body language could also reflect this. Maybe their arms cross, or they try to stand on something to make themselves taller."
+		},
+      {
+        title: "Denial",
+        content:  "They repeatably deny anything being wrong at all. They start to act confused, maybe even annoyed with you for bringing it up.  But remember, if they truly didn’t know what was going on, there would nothing to be frustrated about as they would want to clear things up. "
+      },
+      {
+        title: "Performative Care",
+        content: "If you became upset, did they try to console you when they had just been the one who made you tear up in the first place? The care feels empty. Other people are now around.  This is when someone is so concerned about their reputation they will try to preserve it by acting completely differently in public vs private. This is one of the most manipulative, disorienting things someone can do to someone else. "
+  
+      },
+      {
+        title: "Victim Offender Flip",
+        content: " This is a big one. Where you leave feeling like the bad guy when you were the one who was owed the apology. You start being accused. Your feelings are treated like they don’t matter. I want to remind you that they do. This usually happens when they know they’re guilty but don’t have the grace to even admit doing something wrong. They retreat to being the victim because it’s easier for them to perform sadness and get attention instead. "      }
+    ];
+
+    function showPopup(index) {
+      document.getElementById('popupTitle').innerText = data[index].title;
+      document.getElementById('popupContent').innerText = data[index].content;
+      document.getElementById('popup').style.display = 'block';
+      document.querySelector('.overlay').style.display = 'block';
+    }
+
+    function hidePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.querySelector('.overlay').style.display = 'none';
+    }
+	
+	
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<br> <br> <br> <br> <br> <br> <br> Maybe things have gotten worse since the conversation. Some reactions can go on much longer than the initial interaction. Maybe they’ve spread lies to others. Check out the Gossip page for more support.
+  <h1 class= "info-card"   > It's not your Fault </h1>
+	<div class="info-grid">
+	
+	<img src="images/school.png" alt="anti-bullying" width="300"> 
+<p>	At your age, you shouldn’t have to go through such calculated behaviour.  These people are afraid of being exposed, and that fear is so great they hurt and silence others to protect it. 
+What makes things even more confusing is that you may even be accused of doing these things <br><br>
+    <br> How many things did you experience? Just know that no matter how many, you didn’t deserve any of it. And that even experiencing one of these things is serious enough and that its not about ticking every box for what you went through to be considered abusive.
+	If it left you feeling the ways described at the start, then there has been damage done to you and wounds left behind that cannot be denied.<br>
+	</p>
+	
+	
+	  </div>
+	
+	
+	
+	
+    <p>It’s not your fault for having the conversation in the first place. Remember your age, and remember that this person was supposed to be your friend. 
+	<br><br>You were treating them like a friend. You may have not known the bad signs that they’d react like this. You may have thought they were never capable of hurting you so much. That is a sign of your own good nature. And that good nature hasn’t changed just because you are now identifying the worst traits in someone else.</p>
+    <p>It’s incredibly frustrating when you do what you’ve often been told is the ‘right’ thing, yet things just seem to become worse.
+<br><br>	It’s difficult, and you may have regrets. But don’t underestimate your strength. You made it out of that conversation, so you can make it out of the pain it has caused in you. Head over to our healing page if you’d like to receive some support.</p>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+
+  
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.info-card');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // Optional: fade in only once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+</script>
+
+  
+</body>
+</html>

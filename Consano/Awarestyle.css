@@ -1,0 +1,197 @@
+
+body {
+
+background-color:#95A9EB;
+}
+
+h1 {
+	font-family: 'Georgia', sans-serif;
+    color:black; 
+	background-color:#ededed;
+	padding: 20px;
+	font-size:4vw;
+	border-radius:20px;
+}
+
+
+
+
+
+body {
+	font-family: 'Dubai Regular', sans-serif;
+    color: black; 
+	font-size: 2vw;
+	font-weight:5000;
+	margin:50px
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.info{
+	margin:90px;
+	font-size:3vw;
+	font-weight:500;
+}
+
+.startpage{
+	
+	position: absolute; 
+	top: 50%; 
+	left: 50%;	
+	width:40vw;
+	height:40vw;
+	transform: translate(-50%, -50%);	
+	text-align:center;
+	background-color:#ededed;
+	border-radius:20px;
+
+	padding-left:5vw;
+	padding-right:5vw;
+}
+
+.hideanswer {
+	display:none;
+	font-family: 'Dubai Regular', sans-serif;
+	margin-top:10px;
+	font-size:2vw;	
+}
+
+
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+
+}
+
+button{
+	font-family: 'Dubai Regular', sans-serif;
+	font-size:2vw;
+	background-color:#95A9EB;
+	color:#ededed;
+	border-radius:20px;
+	padding:2vw;
+	border:none;
+	cursor:pointer;
+	
+}
+
+
+.button1 {
+	background-color: #ededed;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px 64px;
+	font-family: 'Georgia', sans-serif;
+	font-size: 3vw;
+	color: black;
+	border-radius:20px;
+	
+	border: 3px solid transparent;
+	border-color:black;
+	display: inline-block;
+
+}
+.button1:hover {
+	background-color: #95A9EB;
+}
+
+.selection-grid {
+  display: grid;
+  grid-template-columns: 1fr 20fr 20fr 1fr;
+  grid-template-rows: 2fr 2fr;
+ 
+  flex-wrap:wrap;
+  gap: 1vw ;
+ 
+}
+.bordeau {
+	text-align: center;
+	width:100%;
+	background-color:#ededed ;
+	
+}
+.bordeau2 {
+	text-align: center;
+	padding:20px;
+	font-size:3vw;
+	border-radius:20px;
+	background-color:#ededed ;
+	
+}
+
+
+.app{
+	background:#95A9EB;
+	width:90%;
+	max-width:600px;
+	margin:100px auto 0;
+	border-radius:20px;
+	padding:30px;
+	font-size:3vw;
+	text-align:center;
+}
+
+.quiz{
+	padding:20px 0;
+}
+.quiz h2{
+	font-family: 'Dubai Regular', sans-serif;
+	font-size:2vw;
+	color:#ededed;
+	font-weight=600;
+}
+.btn{
+	font-family: 'Dubai Regular', sans-serif;
+	background: #ededed;
+	color: black;
+	font-size:2vw;
+	font-weight:500;
+	width:100%;
+	border:none;
+	padding:20px;
+	margin:10px 0;
+	text-align:center;
+	border-radius:20px;
+	cursor:pointer;
+}
+.btn:disabled{
+cursor:no-drop;}
+
+#next-btn{
+	font-family: 'Dubai Regular', sans-serif;
+	background:#ededed;
+	color:black;
+	font-weight:500;
+	width:10vw;
+	border:0;
+	padding:10px;
+	margin:20px auto 0;
+	border-radius:20px;
+	cursor:pointer;
+	display:none;
+	
+	
+}
+
+#comment{
+	display:none;
+}
+.correct{
+	background:#9aeabc;
+}
+.incorrect{
+	background:#ff9393;
+}
