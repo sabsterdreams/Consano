@@ -117,14 +117,22 @@ body {
     text-decoration: none;
   }
 
-  .container {
-    max-width: 950px;
-    margin: 3rem auto;
-    padding: 2.5rem;
-    background-color: #407787;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(200, 150, 140, 0.15);
-  }
+.container {
+  width: 90%;
+  max-width: 950px;
+  margin: 3rem auto;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  background-color: #407787;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(200, 150, 140, 0.15);
+  transition: all 0.3s ease;
+}
+
+.container h1, .container p {
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  line-height: 1.5;
+}
+
   
     .pink-container {
     max-width: 600px;
@@ -358,6 +366,7 @@ button {
 
   
 }
+
 
 
 
