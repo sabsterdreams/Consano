@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <div class="header">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 <a href="Consano.html"> <img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
-<nav>
-  
+<div class="topnav" id="myTopnav">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <a href="tale.html">The Tale of abuse</a>
   <a href="confrontation.html">Confrontation</a>
     <a href="gossip.html">Gossip</a>
@@ -11,17 +16,17 @@
 	<a href="healing.html">Healing</a>
 	<a href="resources.html">Resources</a>
 	<a href="about.html">About</a>
-</nav>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 </div>
-	<title> Ways to deal with emotional abuse that aren't just confrontation</title>
-
-
 <head>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale= 1.0 charset="UTF-8"/> 
 
-</head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale= 1.0 charset="UTF-8"/>
+  
 
 <body>
   <div class="container">
@@ -98,7 +103,17 @@ or ‘I don’t like being spoken to like that’
     });
   });
 </script>
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </html>
+
 
 
