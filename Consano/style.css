@@ -305,7 +305,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #4a2c2a;
-  font-size: 1.8rem;
+  font-size: 2vw;
   font-weight: bold;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -358,5 +358,6 @@ button {
 
   
 }
+
 
 
