@@ -9,7 +9,30 @@ body {
   color: white;
   margin:1px;
 
-  
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+ font-family: 'Segoe UI', sans-serif;
+}
+
+.flex-item {
+  background-color: #5c96a9;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}  
 }
 .question{
 	background-color: #407787;
@@ -329,3 +352,4 @@ button {
 
   
 }
+
