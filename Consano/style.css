@@ -26,7 +26,13 @@ body {
   text-align: center;
   width: 100%;
 }
-
+.flex-item2 {
+  background-color:#407787;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .flex-container {
@@ -352,4 +358,5 @@ button {
 
   
 }
+
 
