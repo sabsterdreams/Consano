@@ -198,9 +198,9 @@ body {
 .smallcontainer {
   max-width: 600px;
   text-align:center;
-max-height:50px;  
+max-height:60px;  
   margin: 0.5rem auto;     
-  padding: 1rem;
+  padding: 3rem;
   font-size: 1vw;          
   background-color: #a59cdc;
   border-radius: 16px;
@@ -402,6 +402,7 @@ button {
 
   
 }
+
 
 
 
