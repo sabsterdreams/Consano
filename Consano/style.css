@@ -196,11 +196,10 @@ body {
   }
 
 .smallcontainer {
-  max-width: 60vw;
+  max-width: 600vw;
   text-align:center;
 max-height:8vw;  
   margin: 0.5rem auto;     
-  padding: 3rem;
   font-size: 1vw;          
   background-color: #a59cdc;
   border-radius: 16px;
@@ -209,7 +208,6 @@ max-height:8vw;
 
   .smallcontainer:hover {
 	  background-color: #fb8f8f;
-	  padding:3rem;
 	  max-height:80px; 
 	    margin: 0.5rem auto; 
 	  text-align:center;
@@ -402,6 +400,7 @@ button {
 
   
 }
+
 
 
 
