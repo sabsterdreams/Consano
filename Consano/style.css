@@ -196,7 +196,7 @@ body {
   }
 
 .smallcontainer {
-  max-width: 6vw;
+  max-width: 60vw;
   text-align:center;
 max-height:8vw;  
   margin: 0.5rem auto;     
@@ -402,6 +402,7 @@ button {
 
   
 }
+
 
 
 
