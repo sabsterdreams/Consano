@@ -208,7 +208,6 @@ max-height:8vw;
 
   .smallcontainer:hover {
 	  background-color: #fb8f8f;
-	  max-height:80px; 
 	    margin: 0.5rem auto; 
 	  text-align:center;
 	  font-size: 1.5vw;
@@ -400,6 +399,7 @@ button {
 
   
 }
+
 
 
 
