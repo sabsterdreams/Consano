@@ -260,7 +260,7 @@ button {
 
 .info-card {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(3vw);
   background: #407787;
   border: 2px solid #f7d6d0;
   padding: 1.5rem;
@@ -401,6 +401,7 @@ button {
 
   
 }
+
 
 
 
