@@ -61,11 +61,7 @@ h2 {
   font-weight: bold;
   transition: background-color 0.3s, border-color 0.3s;
 }
-.header {
-  display: flex;
-  padding: 15px 10px;
-  background-color: #5c96a9;
-}
+
 
 .imtext{
   display: flex;
