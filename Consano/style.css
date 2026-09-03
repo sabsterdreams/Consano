@@ -32,8 +32,8 @@ body {
             min-height: calc(85vh - 100px);
         }
 .badge {
-            background-color: var(--primary-pink);
-            color: var(--text-main);
+            background-color: #ffd4ce;
+            color: #534b4a;
             font-size: 0.7rem;
             font-weight: 600;
             letter-spacing: 0.1em;
