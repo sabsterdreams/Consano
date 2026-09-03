@@ -53,6 +53,42 @@ body {
             color: var(--text-main);
             margin-bottom: 1.5rem;
         }
+
+        .quote-section {
+            background-color: #f7f3ee;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        .quote-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .quote-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        .quote-text {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 3vw, 2.7rem);
+            line-height: 1.4;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+        }
+        .quote-divider {
+            width: 40px;
+            height: 1px;
+            background-color: #888;
+            margin: 0 auto;
+            border: none;
+        }
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -82,6 +118,7 @@ body {
   .flex-container {
     flex-direction: column;
   }
+	
 }  
 }
 .question{
@@ -164,6 +201,8 @@ nav{
 
 /*Responsive Design*/
 @media(max-width: 768px){
+	.quote-section { padding: 4rem 1.5rem; }
+	
 	main {
                 grid-template-columns: 1fr;
                 gap: 3rem;
