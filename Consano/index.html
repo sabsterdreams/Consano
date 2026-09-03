@@ -42,7 +42,7 @@
             <img src="images/girlshome.png" alt="Two girls line art inside a soft pink arch">
         </div>
     </main>
-  <section class="tools-section">
+
     <section class="quote-section">
         <div class="quote-container">
             <p class="quote-subtitle">You're not meant to go through this alone</p>
@@ -51,7 +51,7 @@
         </div>
     </section>
 
-  
+    <section class="tools-section">
         <div class="tools-container">
             <h2 class="tools-heading">We provide tools for healing, self-protection, and long-term emotional growth.</h2>
             <div class="cards-grid">
@@ -116,41 +116,6 @@
         </div>
     </div>
 
-    <script src="navigation.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const cards = document.querySelectorAll('.info-card');
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('show');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
 
-        cards.forEach(card => observer.observe(card));
-      });
-    </script>
-    <script>
-        const data = [
-            {info: "Check out the Jealousy Page"},
-            {info: "Check out the Confrontation Page"},
-            {info: "Check out the Gossip Page"},
-            {info: "Check out the Defend Page"},
-            {info: "Check out the Healing Page"},
-            {info: "Check out the Resources Page"}
-        ];
-        function showinfo(element, index) {
-            element.innerText = data[index].info; 
-        }
-    </script>
 </body>
 </html>
-
-
-
-
-
-
-
