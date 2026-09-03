@@ -202,6 +202,9 @@ nav{
 
 /*Responsive Design*/
 @media(max-width: 768px){
+	.cards-grid {
+                grid-template-columns: 1fr;
+            }
 	.quote-section { padding: 4rem 1.5rem; }
 	
 	main {
@@ -558,21 +561,6 @@ button {
             max-width: 100%;
             margin-bottom: 0;
         }
-        
-        @media (max-width: 992px) {
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
-            main { flex-direction: column; gap: 3rem; }
-            nav { display: none; }
-            .quote-section, .tools-section { padding: 4rem 1.5rem; }
-        }
-
-
-
-
-
-
   
 }
 
