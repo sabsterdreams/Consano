@@ -148,16 +148,6 @@ h2 {
   background-color: #407787;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: #ffffff;
-    z-index: 1000;
-}
 
 .logo {
     display: flex;
@@ -165,19 +155,28 @@ nav {
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-.nav-links a {
-    display: block;
-    padding: 30px 16px;
-    color: #534b4a;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    transition: all ease-in-out 100ms;    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 28px;
+        display: block;
+        width: 100%;
+    }
+.nav-links.open {
+    display: flex !important;
 }
 
 .nav-links a:hover {
