@@ -16,22 +16,22 @@ body {
     /* Pinterest Masonry Layout */
     .pin-container {
       /* Uses CSS Columns for genuine Pinterest-style masonry vertical stacking */
-      column-count: 1;
+      column-count: 3;
       column-gap: 20px;
-      max-width: 1200px;
+      max-width: 600px;
       margin: 0 auto;
     }
 
     /* Responsive Columns */
     @media (min-width: 600px) {
       .pin-container {
-        column-count: 2;
+        column-count: 3;
       }
     }
 
     @media (min-width: 900px) {
       .pin-container {
-        column-count: 3;
+        column-count: 4;
       }
     }
 
