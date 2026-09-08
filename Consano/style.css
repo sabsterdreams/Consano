@@ -9,12 +9,13 @@ body {
     box-sizing: border-box;
 }
 
+    /* Global Reset & Base Styles */
     *, *:before, *:after {
-      box-sizing: inherit;
+      box-sizing: border-box;
     }
 
     /* Pinterest Masonry Layout */
-  .pin-container {
+    .pin-container {
       column-count: 1;
       column-gap: 15px;
       max-width: 1200px; /* Provides room for 3-4 columns to display */
@@ -112,10 +113,7 @@ body {
     .pin-btn:hover {
       background-color: #f7bebe; /* Darker hover state */
     }
-        * {
-            box-sizing: border-box;
-        }
-
+  </style>
         .hero-image-container {
             display: flex;
             justify-content: center;
