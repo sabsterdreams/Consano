@@ -14,33 +14,32 @@ body {
     }
 
     /* Pinterest Masonry Layout */
-    .pin-container {
-      /* Uses CSS Columns for genuine Pinterest-style masonry vertical stacking */
-      column-count: 3;
-      column-gap: 20px;
-      max-width: 1200px;
+  .pin-container {
+      column-count: 1;
+      column-gap: 15px;
+      max-width: 1200px; /* Provides room for 3-4 columns to display */
       margin: 0 auto;
     }
 
     /* Responsive Columns */
     @media (min-width: 600px) {
       .pin-container {
-        column-count: 3;
+        column-count: 3; /* 3 columns on tablet screens */
       }
     }
 
     @media (min-width: 900px) {
       .pin-container {
-        column-count: 4;
+        column-count: 4; /* 4 columns on desktop screens */
       }
     }
 
     /* Tile Styling */
     .pin-card {
       break-inside: avoid;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       background: #ffffff;
-      border-radius: 12px;
+      border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(83, 75, 74, 0.08);
       border: 1px solid rgba(83, 75, 74, 0.05);
@@ -55,7 +54,7 @@ body {
     /* Image Wrapper with Accent Border on Top */
     .pin-image-wrapper {
       width: 100%;
-      border-top: 4px solid #ffd4ce; /* Accent Color */
+      border-top: 3px solid #ffd4ce; /* Accent Color */
       overflow: hidden;
     }
 
@@ -66,17 +65,17 @@ body {
       object-fit: cover;
     }
 
-    /* Content Section */
+    /* Compact Content Section */
     .pin-content {
-      padding: 20px;
+      padding: 12px;
     }
 
     .pin-title {
       font-family: 'Playfair Display', serif;
-      font-size: 1.35rem;
+      font-size: 1.05rem;
       font-weight: 700;
-      line-height: 1.3;
-      margin: 0 0 10px 0;
+      line-height: 1.25;
+      margin: 0 0 6px 0;
       color: #534b4a;
     }
 
@@ -90,9 +89,9 @@ body {
     }
 
     .pin-excerpt {
-      font-size: 0.92rem;
-      line-height: 1.5;
-      margin: 0 0 16px 0;
+      font-size: 0.82rem;
+      line-height: 1.4;
+      margin: 0 0 10px 0;
       color: #534b4a;
       opacity: 0.9;
     }
@@ -103,15 +102,15 @@ body {
       background-color: #ffd4ce; /* Accent Color */
       color: #534b4a;
       font-weight: 600;
-      font-size: 0.85rem;
-      padding: 8px 16px;
+      font-size: 0.75rem;
+      padding: 5px 12px;
       border-radius: 20px;
       text-decoration: none;
       transition: background-color 0.2s ease;
     }
 
     .pin-btn:hover {
-      background-color: #f7bebe; /* Slightly darker accent state */
+      background-color: #f7bebe; /* Darker hover state */
     }
         * {
             box-sizing: border-box;
