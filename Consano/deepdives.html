@@ -8,103 +8,220 @@
     <meta name="keywords" content="bullying between girls in high school, girl bullying, emotional bullying, passive-aggressive bullying, female friendships, covert bullying, mean girls, emotional abuse, toxic friendship">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* Ensure full width and no overflow clipping */
+      body {
+        font-family: 'Open Sans', sans-serif;
+        color: #534b4a;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .page-title {
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        margin: 30px 0 20px 0;
+        color: #534b4a;
+      }
+
+      /* CSS Grid Layout: Guarantees 3-4 columns on desktop/laptop */
+      .pin-container {
+        display: grid;
+        /* Set minimum card width to 220px; fits 3 to 4 cards on most laptop screens */
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        width: 92%;
+        max-width: 1300px;
+        margin: 0 auto 40px auto;
+      }
+
+      /* Tile Card Styling */
+      .pin-card {
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(83, 75, 74, 0.08);
+        border: 1px solid rgba(83, 75, 74, 0.05);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .pin-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(83, 75, 74, 0.12);
+      }
+
+      /* Top Accent Line & Image */
+      .pin-image-wrapper {
+        width: 100%;
+        border-top: 3px solid #ffd4ce;
+        overflow: hidden;
+      }
+
+      .pin-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      /* Content Area */
+      .pin-content {
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      .pin-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 0 0 8px 0;
+        color: #534b4a;
+      }
+
+      .pin-title a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .pin-title a:hover {
+        border-bottom: 2px solid #ffd4ce;
+      }
+
+      .pin-excerpt {
+        font-size: 0.85rem;
+        line-height: 1.45;
+        margin: 0 0 14px 0;
+        color: #534b4a;
+        opacity: 0.9;
+        flex-grow: 1;
+      }
+
+      /* Accent Button */
+      .pin-btn {
+        display: inline-block;
+        align-self: flex-start;
+        background-color: #ffd4ce;
+        color: #534b4a;
+        font-weight: 600;
+        font-size: 0.78rem;
+        padding: 6px 14px;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+      }
+
+      .pin-btn:hover {
+        background-color: #f7bebe;
+      }
+    </style>
 </head>
 <body>
 
-        <nav>
-            <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">        
+            <li><a href="deepdives.html">Articles</a></li>
+            <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
+            <li><a href="about-consano-bullying-support.html">About</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="page-title">Articles</h2>
+        
+    <main class="pin-container">
+
+        <!-- Article 1 -->
+        <article class="pin-card">
+            <div class="pin-image-wrapper">
+                <img src="https://picsum.photos/600/750?random=1" alt="Article Visual 1">
             </div>
-            <ul class="nav-links">        
-                <li><a href="deepdives.html">Articles</a></li>
-                <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
-                <li><a href="about-consano-bullying-support.html">About</a></li>
-            </ul>
-        </nav>
+            <div class="pin-content">
+                <h2 class="pin-title"><a href="#">Refining Your Morning Rituals for Clarity</a></h2>
+                <p class="pin-excerpt">Explore gentle ways to structure the start of your day to foster focus, reduce stress, and set an intentional mood.</p>
+                <a href="#" class="pin-btn">Read Article</a>
+            </div>
+        </article>
 
-  <body>
-<h2> Articles </h2>
-      
-   <main class="pin-container">
+        <!-- Article 2 -->
+        <article class="pin-card">
+            <div class="pin-image-wrapper">
+                <img src="https://picsum.photos/600/450?random=2" alt="Article Visual 2">
+            </div>
+            <div class="pin-content">
+                <h2 class="pin-title"><a href="#">Elements of Warm Interior Styling</a></h2>
+                <p class="pin-excerpt">How subtle textural details and neutral palettes transform living spaces into grounded sanctuaries.</p>
+                <a href="#" class="pin-btn">Read Article</a>
+            </div>
+        </article>
 
-    <!-- Article 1 -->
-    <article class="pin-card">
-      <div class="pin-image-wrapper">
-        <img src="https://picsum.photos/600/750?random=1" alt="Article Visual 1">
-      </div>
-      <div class="pin-content">
-        <h2 class="pin-title"><a href="#">Refining Your Morning Rituals for Clarity</a></h2>
-        <p class="pin-excerpt">Explore gentle ways to structure the start of your day to foster focus, reduce stress, and set an intentional mood.</p>
-        <a href="#" class="pin-btn">Read Article</a>
-      </div>
-    </article>
+        <!-- Article 3 -->
+        <article class="pin-card">
+            <div class="pin-image-wrapper">
+                <img src="https://picsum.photos/600/800?random=3" alt="Article Visual 3">
+            </div>
+            <div class="pin-content">
+                <h2 class="pin-title"><a href="#">A Guide to Seasonal Botanical Tea Blends</a></h2>
+                <p class="pin-excerpt">Discovering herbs, roots, and dried petals that soothe digestion and balance energy throughout the changing seasons.</p>
+                <a href="#" class="pin-btn">Read Article</a>
+            </div>
+        </article>
 
-    <!-- Article 2 -->
-    <article class="pin-card">
-      <div class="pin-image-wrapper">
-        <img src="https://picsum.photos/600/450?random=2" alt="Article Visual 2">
-      </div>
-      <div class="pin-content">
-        <h2 class="pin-title"><a href="#">Elements of Warm Interior Styling</a></h2>
-        <p class="pin-excerpt">How subtle textural details and neutral palettes transform living spaces into grounded sanctuaries.</p>
-        <a href="#" class="pin-btn">Read Article</a>
-      </div>
-    </article>
+        <!-- Article 4 -->
+        <article class="pin-card">
+            <div class="pin-image-wrapper">
+                <img src="https://picsum.photos/600/500?random=4" alt="Article Visual 4">
+            </div>
+            <div class="pin-content">
+                <h2 class="pin-title"><a href="#">Finding Focus in a Digital World</a></h2>
+                <p class="pin-excerpt">Actionable habits for maintaining creative momentum and establishing healthy boundaries with your daily screens.</p>
+                <a href="#" class="pin-btn">Read Article</a>
+            </div>
+        </article>
 
-    <!-- Article 3 -->
-    <article class="pin-card">
-      <div class="pin-image-wrapper">
-        <img src="https://picsum.photos/600/800?random=3" alt="Article Visual 3">
-      </div>
-      <div class="pin-content">
-        <h2 class="pin-title"><a href="#">A Guide to Seasonal Botanical Tea Blends</a></h2>
-        <p class="pin-excerpt">Discovering herbs, roots, and dried petals that soothe digestion and balance energy throughout the changing seasons.</p>
-        <a href="#" class="pin-btn">Read Article</a>
-      </div>
-    </article>
+        <!-- Article 5 -->
+        <article class="pin-card">
+            <div class="pin-image-wrapper">
+                <img src="https://picsum.photos/600/700?random=5" alt="Article Visual 5">
+            </div>
+            <div class="pin-content">
+                <h2 class="pin-title"><a href="#">The Art of Mindful Culinary Crafting</a></h2>
+                <p class="pin-excerpt">Transforming weeknight meals into a creative practice by honoring simple ingredients and traditional techniques.</p>
+                <a href="#" class="pin-btn">Read Article</a>
+            </div>
+        </article>
 
-    <!-- Article 4 -->
-    <article class="pin-card">
-      <div class="pin-image-wrapper">
-        <img src="https://picsum.photos/600/500?random=4" alt="Article Visual 4">
-      </div>
-      <div class="pin-content">
-        <h2 class="pin-title"><a href="#">Finding Focus in a Digital World</a></h2>
-        <p class="pin-excerpt">Actionable habits for maintaining creative momentum and establishing healthy boundaries with your daily screens.</p>
-        <a href="#" class="pin-btn">Read Article</a>
-      </div>
-    </article>
+        <!-- Article 6 -->
+        <article class="pin-card">
+            <div class="pin-image-wrapper">
+                <img src="https://picsum.photos/600/550?random=6" alt="Article Visual 6">
+            </div>
+            <div class="pin-content">
+                <h2 class="pin-title"><a href="#">Architectural Lines and Subtle Shadows</a></h2>
+                <p class="pin-excerpt">Observing how sunlight interacts with natural building materials to create ever-changing visual art inside homes.</p>
+                <a href="#" class="pin-btn">Read Article</a>
+            </div>
+        </article>
 
-    <!-- Article 5 -->
-    <article class="pin-card">
-      <div class="pin-image-wrapper">
-        <img src="https://picsum.photos/600/700?random=5" alt="Article Visual 5">
-      </div>
-      <div class="pin-content">
-        <h2 class="pin-title"><a href="#">The Art of Mindful Culinary Crafting</a></h2>
-        <p class="pin-excerpt">Transforming weeknight meals into a creative practice by honoring simple ingredients and traditional techniques.</p>
-        <a href="#" class="pin-btn">Read Article</a>
-      </div>
-    </article>
-
-    <!-- Article 6 -->
-    <article class="pin-card">
-      <div class="pin-image-wrapper">
-        <img src="https://picsum.photos/600/550?random=6" alt="Article Visual 6">
-      </div>
-      <div class="pin-content">
-        <h2 class="pin-title"><a href="#">Architectural Lines and Subtle Shadows</a></h2>
-        <p class="pin-excerpt">Observing how sunlight interacts with natural building materials to create ever-changing visual art inside homes.</p>
-        <a href="#" class="pin-btn">Read Article</a>
-      </div>
-    </article>
-
-  </main>
-
+    </main>
 
 </body>
 </html>
