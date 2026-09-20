@@ -3,51 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Do Others Not Notice Emotionally Abusive People? | Consano</title>
-    <meta name="description" content="Understand why covert bullying and emotional abuse often go unnoticed by others using the fairytale book metaphor.">
-    <meta name="keywords" content="emotional abuse, covert bullying, toxic friendships, mean girls, manipulation, consano support">
+    <title>Signs Your Friend Is Jealous of You | Consano</title>
+    <meta name="description" content="Learn about signs of jealousy in female friendships, covert bullying, and resources for healing and resilience.">
+    <meta name="keywords" content="bullying between girls in high school, girl bullying, emotional bullying, toxic friendship, jealousy">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Base Container & Typography */
-        .main-container {
-            max-width: 850px;
+        .container {
+            max-width: 800px;
             margin: 0 auto;
-            padding: 30px 20px;
+            padding: 20px;
             font-family: Arial, sans-serif;
-            color: #2d3436;
-            line-height: 1.8;
+            color: #333;
+            line-height: 1.6;
         }
 
-        h1.article-title {
-            font-size: 2.2rem;
-            color: #2d3436;
-            margin-top: 15px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        /* Framed Image Styles */
-        .framed-image-container {
-            text-align: center;
-            margin: 25px 0;
-        }
-
+        /* Framed Image Styling with #ffd4ce accent */
         .image-frame {
             display: inline-block;
-            padding: 10px;
+            padding: 12px;
             background: #ffffff;
-            border: 1px solid #e2e8f0;
+            border: 2px solid #ffd4ce;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 100%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            margin: 25px 0;
+            transition: transform 0.3s ease;
         }
 
         .image-frame:hover {
             transform: translateY(-4px);
-            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
         }
 
         .image-frame img {
@@ -57,114 +42,93 @@
             border-radius: 8px;
         }
 
-        /* Highlight Callout Box */
-        .callout-quote {
-            background: #f8f9fa;
-            border-left: 4px solid #6c5ce7;
-            padding: 20px 25px;
-            margin: 30px 0;
-            border-radius: 0 10px 10px 0;
-            font-size: 1.1em;
-            font-style: italic;
-            color: #4a5568;
+        /* Interactive Accordion Cards */
+        .interactive-grid {
+            display: grid;
+            gap: 12px;
+            margin: 25px 0;
         }
 
-        /* Interactive Chapter Cards (Accordion / Timeline) */
-        .chapter-navigation {
-            margin: 35px 0;
-        }
-
-        .chapter-card {
-            background: #ffffff;
-            border: 1px solid #edf2f7;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-            overflow: hidden;
+        .accordion-card {
+            background: #fffafa;
+            border: 1px solid #ffd4ce;
+            border-left: 5px solid #ffd4ce;
+            border-radius: 8px;
+            padding: 14px 18px;
             cursor: pointer;
-            transition: all 0.25s ease;
+            transition: all 0.2s ease;
         }
 
-        .chapter-card:hover {
-            border-color: #cbd5e0;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+        .accordion-card:hover {
+            background: #fff5f3;
         }
 
-        .chapter-header {
-            padding: 18px 22px;
+        .accordion-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-weight: bold;
-            font-size: 1.05em;
-            background: #fafafa;
         }
 
-        .chapter-body {
+        .accordion-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-            padding: 0 22px;
-            color: #4a5568;
+            transition: max-height 0.3s ease, margin-top 0.3s ease;
+            color: #555;
+            font-size: 0.95em;
         }
 
-        .chapter-card.active .chapter-body {
-            max-height: 250px;
-            padding: 18px 22px;
-            border-top: 1px solid #edf2f7;
+        .accordion-card.active .accordion-content {
+            max-height: 120px;
+            margin-top: 10px;
         }
 
-        .chapter-card.active .fa-chevron-down {
+        .accordion-card.active .fa-chevron-down {
             transform: rotate(180deg);
         }
 
-        /* Interactive Reflection Widget */
-        .reflection-widget {
-            background: #f0f4f8;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 40px 0;
-            border: 1px solid #d9e2ec;
+        /* Interactive Checklist Widget */
+        .checklist-widget {
+            background: #fffaf9;
+            border: 1px solid #ffd4ce;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
         }
 
-        .reflection-widget h3 {
-            margin-top: 0;
-            color: #102a43;
-        }
-
-        .interactive-btn {
-            background: #6c5ce7;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-size: 0.95em;
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
             cursor: pointer;
-            margin-top: 10px;
-            transition: background 0.2s ease;
         }
 
-        .interactive-btn:hover {
-            background: #5a4bcf;
+        .checklist-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #f2b5ac;
+            cursor: pointer;
         }
 
-        .reflection-answer {
-            display: none;
+        .quiz-result {
             margin-top: 15px;
-            padding: 15px;
-            background: #ffffff;
-            border-radius: 8px;
-            border-left: 3px solid #6c5ce7;
+            padding: 12px;
+            background: #ffd4ce;
+            border-radius: 6px;
+            font-weight: bold;
+            color: #333;
+            display: none;
         }
 
         /* Scroll Animations */
-        .fade-in-section {
+        .info-card {
             opacity: 0;
-            transform: translateY(25px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
 
-        .fade-in-section.show {
+        .info-card.show {
             opacity: 1;
             transform: translateY(0);
         }
@@ -187,153 +151,242 @@
     </nav>
     <script src="navigation.js"></script>
 
-    <div class="main-container">
+    <div class="container">
+        <h1 class="info-card">Red Flags and Signs that your friend is jealous of you that you may have never thought of</h1>
         
-        <!-- Header Image Frame -->
-        <div class="framed-image-container fade-in-section">
-            <div class="image-frame">
-                <img src="images/stories.png" alt="Fairytale book cover illustration" style="max-width: 100%;">
+        <h2>"They're jealous of you"</h2>
+        <p>
+            It’s a common saying, but often times it can be true. Jealous friends are everywhere, and they are the worst kind. Slowly chipping away at your own confidence and making you question whether you are going insane for feeling offended.
+        </p>
+
+        <!-- Framed Image -->
+        <div style="text-align: center;">
+            <div class="image-frame info-card">
+                <img src="images/jealous.png" alt="anti-bullying" width="300">
             </div>
         </div>
 
-        <h1 class="article-title fade-in-section">Why Do Others Not Notice Emotionally Abusive People?</h1>
+        <p><em>Click on any behavior below to expand and read details:</em></p>
 
-        <p class="fade-in-section">
-            The first pages of a book set the tone for the story you are going to read. Like how the words <em>"Once upon a time"</em> tell you that you’re reading a fairytale. The front cover may also reflect this—usually being very pretty and decorated with flowers and ballgowns.
-        </p>
-
-        <div class="callout-quote fade-in-section">
-            "This is what everyone sees at first. Some may never pick up the book, but you did. You thought you knew what to expect because so many fairytale stories look and sound similar."
-        </div>
-
-        <p class="fade-in-section">
-            Maybe you noticed that the book itself felt a bit different early on, but it was hard to put your finger on it. That’s why you should never blame yourself for starting to read the story…
-        </p>
-
-        <!-- Second Framed Image -->
-        <div class="framed-image-container fade-in-section">
-            <div class="image-frame">
-                <img src="images/earlysigns.png" alt="Early warning signs illustration" style="max-width: 100%;">
-            </div>
-        </div>
-
-        <div class="callout-quote fade-in-section" style="border-left-color: #a29bfe; text-align: center;">
-            Ordinary people can match up to early signs. It is often very difficult to distinguish them from people who aren’t acting from a genuinely kind place.
-        </div>
-
-        <!-- Interactive Chapter Breakdown -->
-        <div class="chapter-navigation fade-in-section">
-            <p><strong>Click each stage below to explore how the story unfolds:</strong></p>
-
-            <div class="chapter-card">
-                <div class="chapter-header">
-                    <span>1. The Hook (The Fairytale Beginning)</span>
+        <!-- Interactive Expandable Accordion List -->
+        <div class="interactive-grid">
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Seems to leave you out or ignore you</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
-                <div class="chapter-body">
-                    The relationship seemed really good at first—almost too much of a fairytale. They were attentive, supportive, and seemingly warm, drawing you in completely.
+                <div class="accordion-content">
+                    They may intentionally exclude you or leave you out of conversations and plans to make you feel isolated.
                 </div>
             </div>
 
-            <div class="chapter-card">
-                <div class="chapter-header">
-                    <span>2. The Sudden Shifts (Fairytale to Horror)</span>
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Very competitive person</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
-                <div class="chapter-body">
-                    As you kept reading, the tone changed to something darker. But then it would suddenly shift back to a fairytale. These unpredictable changes kept you hooked, hoping the happy story would stay.
+                <div class="accordion-content">
+                    They turn everyday situations into a race or competition where they feel they must always beat you.
                 </div>
             </div>
 
-            <div class="chapter-card">
-                <div class="chapter-header">
-                    <span>3. The Disguise Unmasked</span>
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Constantly looking and asking about your test scores</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
-                <div class="chapter-body">
-                    Eventually, you realize the plot doesn't make sense anymore. It became the total opposite of where it started. The beautiful beginning was just a disguise all along.
+                <div class="accordion-content">
+                    They track your results closely to measure themselves against you rather than just encouraging you.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Goes quiet when you achieve something or tries to minimise it</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    When you accomplish something good, they get cold or try to make your achievement seem like no big deal.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Their behaviour changes for the worst as you improve yourself or do better than them at something</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    Your personal growth or success triggers negative reactions, hostility, or sudden distance from them.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Makes a big deal out of everything they achieve even if it’s small</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They constantly seek validation and spotlight for minor things to maintain a sense of superiority.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Has a fear of failure</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    Their deep fear of falling behind makes them view your accomplishments as a direct threat to them.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Gives you dirty looks, maybe whilst adjusting their appearance</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    Subtle physical gestures or glares designed to project judgment and make you feel insecure.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Passive aggressive comments ( little jabs that aren’t as noticeable as direct mean words)</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    Sneaky insults wrapped as jokes or offhand remarks that leave you feeling hurt but confused.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Copies your style or things you own</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They imitate what you buy, how you dress, or how you talk while still putting you down.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Questions your abilities or choices</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They plant seeds of doubt in your mind so you lose confidence in your own decisions and talents.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Acts judgemental when you express your happiness or passions</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They dampen your excitement or make fun of the things you feel genuinely passionate about.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Starts lots of arguments with you or about you, accusing you of doing things you didn’t</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They create fake drama or false accusations to put you on the defensive and shift focus.
+                </div>
+            </div>
+
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Gets annoyed or acts cold when you chose to hang out with other people trying to isolate you from others</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They guilt trip you for spending time with other friends so you stay easier to control.
                 </div>
             </div>
         </div>
 
-        <!-- Third Framed Image -->
-        <div class="framed-image-container fade-in-section">
-            <div class="image-frame">
-                <img src="images/hooked.png" alt="Hooked on the narrative illustration" style="max-width: 100%;">
-            </div>
+        <!-- Interactive Checklist Tool -->
+        <div class="checklist-widget info-card">
+            <h3>Reflect on Your Situation</h3>
+            <p>Select any behaviors you have noticed recently:</p>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> They minimize my achievements or go quiet when I get good news.
+            </label>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> They make subtle passive aggressive comments or little jabs.
+            </label>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> They act cold when I spend time with other people.
+            </label>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> I feel like I am walking on eggshells or losing my confidence around them.
+            </label>
+            <div id="quizResult" class="quiz-result"></div>
         </div>
 
-        <p class="fade-in-section">
-            Emotional abuse works in a similar way. You keep feeling good and then bad around the person. Other times you may find the person deeply unsettling or frustrating without being able to explain why to anyone else. 
+        <p>
+            When these behaviours start working together, they can be incredibly distracting, putting you away from focusing on more important things like your studies. This behaviour is largely out of your control.
         </p>
 
-        <p class="fade-in-section">
-            Sometimes this doubt makes you question your own insecurities, but often it's because your intuition is sensing that something isn’t genuine. <strong>Remember: you never have to read the full story.</strong> If you feel uncomfortable, take steps to step away safely.
+        <h1 class="info-card">What to do</h1>
+        <p>
+            Other than distancing yourself from these types of people, don’t tell them about your goals and achievements. These add fuel to their hatred and should only be for those who truly support you.
+            <br><br>
+            Jealous people want to have social groups that buy into a fantasy about them being the best of the best. They find others achievements threats to their status.
         </p>
 
-        <!-- Fourth Framed Image -->
-        <div class="framed-image-container fade-in-section">
-            <div class="image-frame" style="max-width: 320px;">
-                <img src="images/book.png" alt="Unmasking the true story illustration" style="width: 100%;">
-            </div>
-        </div>
-
-        <p class="fade-in-section">
-            The gut feeling you had was right. It wasn’t a fairytale after all—it was a horror story disguised with a pretty cover.
+        <h2 class="info-card">Don't dim your light</h2>
+        <p>
+            True friends will truly celebrate you and admire you for you positive best traits rather than try to put you down. That’s why it is important to gravitate towards those kinds of people rather than sticking with those who are obviously jealous of you.
         </p>
-
-        <p class="fade-in-section">
-            Others may not believe you at first when you tell them the truth about what you experienced. Not because you’re wrong, but because from their perspective, <strong>they have only ever seen the front cover and the first few pages</strong>—the ones designed to make everything look perfect.
-        </p>
-
-        <!-- Reflection Tool Widget -->
-        <div class="reflection-widget fade-in-section">
-            <h3><i class="fas fa-book-open"></i> Key Takeaway Reflection</h3>
-            <p>Why is it so hard for outside observers to spot covert emotional abuse?</p>
-            <button class="interactive-btn" id="revealInsightBtn">Reveal Key Psychological Insight</button>
-            <div class="reflection-answer" id="reflectionInsight">
-                <strong>Covert Manipulation:</strong> Emotionally abusive individuals often save their harmful behavior strictly for private interactions or subtle jabs only the target understands. To outsiders, they maintain a warm "front cover" persona, making the target feel isolated when trying to explain their experience.
-            </div>
-        </div>
-
     </div>
 
     <!-- Scripts -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Scroll Animation Observer
-            const fadeSections = document.querySelectorAll('.fade-in-section');
-            const observer = new IntersectionObserver((entries) => {
+            const cards = document.querySelectorAll('.info-card');
+            const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('show');
                         observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.15 });
+            }, { threshold: 0.1 });
 
-            fadeSections.forEach(section => observer.observe(section));
+            cards.forEach(card => observer.observe(card));
 
-            // Interactive Chapter Accordion
-            const chapterCards = document.querySelectorAll('.chapter-card');
-            chapterCards.forEach(card => {
+            const accordions = document.querySelectorAll('.accordion-card');
+            accordions.forEach(card => {
                 card.addEventListener('click', () => {
                     card.classList.toggle('active');
                 });
             });
 
-            // Interactive Reflection Widget
-            const revealBtn = document.getElementById('revealInsightBtn');
-            const insightBox = document.getElementById('reflectionInsight');
+            const checkboxes = document.querySelectorAll('.flag-check');
+            const resultBox = document.getElementById('quizResult');
 
-            revealBtn.addEventListener('click', () => {
-                if (insightBox.style.display === 'block') {
-                    insightBox.style.display = 'none';
-                    revealBtn.textContent = 'Reveal Key Psychological Insight';
-                } else {
-                    insightBox.style.display = 'block';
-                    revealBtn.textContent = 'Hide Insight';
-                }
+            checkboxes.forEach(box => {
+                box.addEventListener('change', () => {
+                    const checkedCount = document.querySelectorAll('.flag-check:checked').length;
+                    resultBox.style.display = 'block';
+                    
+                    if (checkedCount === 0) {
+                        resultBox.style.display = 'none';
+                    } else if (checkedCount === 1) {
+                        resultBox.textContent = "Keep an eye on this behavior if it continues over time.";
+                    } else if (checkedCount <= 3) {
+                        resultBox.textContent = "It may be time to set firm boundaries with this person.";
+                    } else {
+                        resultBox.textContent = "Multiple flags present. Consider taking steps to distance yourself safely.";
+                    }
+                });
             });
         });
     </script>
