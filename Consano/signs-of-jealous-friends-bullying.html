@@ -26,125 +26,318 @@
             </ul>
         </nav>
 <script src="navigation.js"></script>
-  <title> Signs your Friend is Jealous of You</title>
+
+    <style>
+        /* Modern Container & Layout Styling */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Framed Image Styling */
+        .image-frame {
+            display: inline-block;
+            padding: 12px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            margin: 30px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .image-frame:hover {
+            transform: translateY(-4px);
+        }
+
+        .image-frame img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Interactive Accordion Grid/Cards */
+        .interactive-grid {
+            display: grid;
+            gap: 12px;
+            margin: 25px 0;
+        }
+
+        .accordion-card {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            border-left: 4px solid #6c5ce7;
+            border-radius: 6px;
+            padding: 14px 18px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .accordion-card:hover {
+            background: #f0f0ff;
+        }
+
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, margin-top 0.3s ease;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .accordion-card.active .accordion-content {
+            max-height: 100px;
+            margin-top: 10px;
+        }
+
+        .accordion-card.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* Interactive Checklist Widget */
+        .checklist-widget {
+            background: #f4f6f8;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .quiz-result {
+            margin-top: 15px;
+            padding: 10px;
+            background: #e0f7fa;
+            border-radius: 6px;
+            font-weight: bold;
+            display: none;
+        }
+
+        /* Scroll Animation Fade-In */
+        .info-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .info-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-  <h1 class="info-card" >Red Flags and Signs that your friend is jealous of you that you may have never thought of</h1>
-   <h2 >"They're jealous of you"</h2>
-   <p> It’s a common saying, but often times it can be true. 
-   Jealous friends are everywhere, and they are the worst kind.
-   Slowly chipping away at your own confidence and making you question 
-   whether you are going insane for feeling offended.</p>
-   
-   <div class="smallcontainer">
-   <p> Seems to leave you out or ignore you  </p>
-   </div>
-      <div class="smallcontainer">
-   <p> Very competitive person </p>
-   </div>
-      <div class="smallcontainer">
-   <p>Constantly looking and asking about your test scores</p>
-   </div>
-      <div class="smallcontainer">
-   <p> Goes quiet when you achieve something or tries to minimise it  </p>
-   </div>
-      <div class="smallcontainer">
-   <p> Their behaviour changes for the worst as you improve yourself or do better than them at something</p>
-   </div>
-        <div class="smallcontainer">
-   <p> Makes a big deal out of everything they achieve even if it’s small  </p>
-   </div>
-         <div class="smallcontainer">
-   <p> Has a fear of failure  </p>
-   
-   </div>
-   
-    <div style="text-align:center" >
-<img src="images/jealous.png" alt="anti-bullying" width="300">
-</div> 
-         <div class="smallcontainer">
-   <p> Gives you dirty looks, maybe whilst adjusting their appearance </p>
-   </div>
-         <div class="smallcontainer">
-   <p> Passive aggressive comments  ( little jabs that aren’t as noticeable as direct mean words)  </p>
-   </div>
-         <div class="smallcontainer">
-   <p> Copies your style or things you own </p>
-   </div>
-          <div class="smallcontainer">
-   <p> Questions your abilities or choices </p>
-   </div>
-          <div class="smallcontainer">
-   <p> Acts judgemental when you express your happiness or passions  </p>
-   </div>
-          <div class="smallcontainer">
-   <p> Starts lots of arguments with you or about you, accusing you of doing things you didn’t</p>
-   </div>
-          <div class="smallcontainer">
-   <p> Gets annoyed or acts cold when you chose to hang out with other people - trying to isolate you from others </p>
-   </div>
-   
- <p>When these behaviours start working together, they can be incredibly distracting, putting you away from focusing 
- on more important things like your studies. 
- This behaviour is largely out of your control.  </p> 
 
- <h1 class="info-card"> What to do </h1>
- 
- <p> Other than distancing yourself from these types of people, don’t tell them about your goals and achievements. These add fuel to their hatred and should only be for those who truly support you.
- <br><br> Jealous people want to have social groups that buy into a fantasy about them being the best of the best. They find others achievements threats to their status.  </p> 
-  <h2 class="info-card"> Don't dim your light </h2>
-  <p> True friends will truly celebrate you and admire you for you positive best traits rather than try to put you down. 
-  That’s why it is important to gravitate towards those kinds of people rather than sticking with those who are obviously jealous of you.
-  </p>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">        
+            <li><a href="deepdives.html">Articles</a></li>
+            <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
+            <li><a href="about-consano-bullying-support.html">About</a></li>
+        </ul>
+    </nav>
+    <script src="navigation.js"></script>
 
+    <div class="container">
+        <h1 class="info-card">Red Flags & Hidden Signs Your Friend Might Be Jealous of You</h1>
+        
+        <h2>"They're jealous of you"</h2>
+        <p>
+            It’s a common saying, but often times it can be true. Jealous friends are everywhere, and they are the worst kind—slowly chipping away at your confidence and making you question whether you are going insane for feeling offended.
+        </p>
 
+        <!-- Framed Image -->
+        <div style="text-align: center;">
+            <div class="image-frame">
+                <img src="images/jealous.png" alt="Anti-bullying concept image" width="300">
+            </div>
+        </div>
 
+        <p><em>Click on any behavior below to expand and learn more:</em></p>
 
+        <!-- Interactive Expandable Accordion List -->
+        <div class="interactive-grid">
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Seems to leave you out or ignore you</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They intentionally exclude you from plans or discussions to diminish your presence in the group.
+                </div>
+            </div>
 
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Very competitive mindset</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    Instead of celebrating with you, every situation becomes a contest they feel they must win.
+                </div>
+            </div>
 
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Obsessed with your academic or personal scores</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They constantly check how you did just to measure if they outperformed you.
+                </div>
+            </div>
 
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Goes quiet or minimizes your achievements</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    When you succeed, they change the topic, give backhanded compliments, or act disinterested.
+                </div>
+            </div>
 
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Gives dirty looks or passive-aggressive remarks</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    Little subtle jabs that are hard to call out directly, designed to make you self-conscious.
+                </div>
+            </div>
 
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Copies your style or belongings</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They mimic your clothes, hair, or interests while simultaneously picking at your confidence.
+                </div>
+            </div>
 
+            <div class="accordion-card info-card">
+                <div class="accordion-header">
+                    <span>Tries to isolate you from other friends</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    They get annoyed or act cold when you spend time with others to keep control over you.
+                </div>
+            </div>
+        </div>
 
+        <!-- Interactive Checkbox Widget -->
+        <div class="checklist-widget info-card">
+            <h3>Quick Check: How many behaviors are you seeing?</h3>
+            <p>Select the traits that match your experience:</p>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> They act distant or cold when I share good news.
+            </label>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> They turn everything into an unspoken competition.
+            </label>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> I feel drained or anxious after hanging out with them.
+            </label>
+            <label class="checklist-item">
+                <input type="checkbox" class="flag-check"> They use passive-aggressive jokes at my expense.
+            </label>
+            <div id="quizResult" class="quiz-result"></div>
+        </div>
 
+        <p>
+            When these behaviors start working together, they can be incredibly distracting, pulling your focus away from important goals like your studies and personal growth. Remember: **this behavior is largely out of your control.**
+        </p>
 
-  </div>
+        <h1 class="info-card">What to Do</h1>
+        <p>
+            Other than distancing yourself from these types of people, stop sharing your goals and achievements with them. Unsupportive people use your success as fuel for their envy. Save your good news for those who truly support you.
+            <br><br>
+            Jealous people often want social groups to buy into a fantasy where they are at the top. They view your achievements as direct threats to their status.
+        </p>
+
+        <h2 class="info-card">Don't Dim Your Light</h2>
+        <p>
+            True friends will celebrate and admire you for your positive traits rather than try to put you down. Gravitate toward people who lift you up rather than holding onto friendships that tear you down.
+        </p>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Intersection Observer for Animations
+            const cards = document.querySelectorAll('.info-card');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach(card => observer.observe(card));
+
+            // Interactive Accordion Functionality
+            const accordions = document.querySelectorAll('.accordion-card');
+            accordions.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
+
+            // Interactive Checklist Calculator
+            const checkboxes = document.querySelectorAll('.flag-check');
+            const resultBox = document.getElementById('quizResult');
+
+            checkboxes.forEach(box => {
+                box.addEventListener('change', () => {
+                    const checkedCount = document.querySelectorAll('.flag-check:checked').length;
+                    resultBox.style.display = 'block';
+                    
+                    if (checkedCount === 0) {
+                        resultBox.style.display = 'none';
+                    } else if (checkedCount === 1) {
+                        resultBox.textContent = "Take note: Keep an eye out if this becomes a recurring pattern.";
+                    } else if (checkedCount <= 3) {
+                        resultBox.textContent = "Caution: This dynamic seems toxic. Setting healthy boundaries is recommended.";
+                    } else {
+                        resultBox.textContent = "High Risk: These strong indicator patterns suggest an unhealthy friendship dynamic.";
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.info-card');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target); // Optional: fade in only once
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    cards.forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 </html>
-
-
-
-
