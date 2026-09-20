@@ -4,152 +4,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullying Between Girls in High School | Emotional Support, Resources and Awareness | Consano</title>
+    <title>Signs Gossip is Going Too Far & How to Deal with a Smear Campaign | Consano</title>
     <meta name="description" content="Learn about bullying between girls in high school, mean girls, emotional abuse in friendships, and find resources for healing and resilience.">
-    <meta name="keywords" content="bullying between girls in high school, girl bullying, emotional bullying, passive-aggressive bullying, female friendships, covert bullying, mean girls, emotional abuse, toxic friendship">
+    <meta name="keywords" content="bullying between girls in high school, girl bullying, emotional bullying, passive-aggressive bullying, female friendships, covert bullying, mean girls, emotional abuse, toxic friendship, smear campaign">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Framed Image Styling using #ffd4ce accent */
+        .image-frame {
+            display: inline-block;
+            padding: 10px;
+            background: #ffffff;
+            border: 2px solid #ffd4ce;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+            max-width: 100%;
+        }
+
+        .image-frame:hover {
+            transform: translateY(-4px);
+        }
+
+        .image-frame img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Grid Layouts */
+        .info-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .info-grid-item {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        /* Interactive Accordion Cards for Spotting Gossipers */
+        .gossip-grid {
+            display: grid;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .gossip-card {
+            background: #fffafa;
+            border: 1px solid #ffd4ce;
+            border-left: 5px solid #ffd4ce;
+            border-radius: 8px;
+            padding: 16px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .gossip-card:hover {
+            background: #fff5f3;
+        }
+
+        .gossip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .gossip-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, margin-top 0.3s ease;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .gossip-card.active .gossip-content {
+            max-height: 200px;
+            margin-top: 10px;
+        }
+
+        .gossip-card.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* Interactive Checklist for Action Steps */
+        .action-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .action-checklist li {
+            background: #fffaf9;
+            border: 1px solid #ffd4ce;
+            border-radius: 6px;
+            padding: 10px 14px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .action-checklist li:hover {
+            background: #fff0ed;
+        }
+
+        .action-checklist input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #f2b5ac;
+            cursor: pointer;
+        }
+
+        /* Interactive Safe Space Activity Box */
+        .activity-box {
+            background: #fffaf9;
+            border: 2px solid #ffd4ce;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .activity-input-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .activity-input-group input {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+            border: 1px solid #ffd4ce;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .activity-input-group button {
+            background: #ffd4ce;
+            color: #333;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .activity-input-group button:hover {
+            background: #f2c4be;
+        }
+
+        .circles-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .circle-chip {
+            background: #ffffff;
+            border: 1px solid #ffd4ce;
+            border-radius: 20px;
+            padding: 6px 14px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+
+        .circle-chip .remove-btn {
+            color: #888;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .circle-chip .remove-btn:hover {
+            color: #e74c3c;
+        }
+
+        /* Scroll Animations */
+        .info-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .info-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
 
-        <nav>
-            <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">        
+            <li><a href="deepdives.html">Articles</a></li>
+            <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
+            <li><a href="about-consano-bullying-support.html">About</a></li>
+        </ul>
+    </nav>
+    <script src="navigation.js"></script>
+
+    <div class="container">
+        <h1 class="info-card">Is It Really Just Gossip?</h1>
+
+        <p class="info-card">
+            Gossip isn’t inherently a negative thing. Sometimes it’s just a way of bonding or finding out you think the same way as someone else. But sometimes gossip is used as something far darker. A weapon. Literally it can feel like someone is trying to destroy you with it.
+        </p>
+
+        <p class="info-card">
+            Maybe you confronted someone in private, but now everyone else is starting to act strange or even rude towards you. You know what’s happened, and maybe you didn’t hear it so you can’t give evidence to a teacher, but you know. 
+            <br><br> 
+            You may have become victim to a <strong>smear campaign</strong>. 
+            <br><br>
+            This is where your reputation starts to be tarnished in favour of protecting someone else, someone who hurt you. Maybe now you’re being treated like you did something terrible. Now you’re being looked at with disgust or heads are turning as you walk to school. Girls are hitting you with their handbags as they shove past you. Now perhaps people who were your friends are even trying to avoid you out of no where. But the worst bit? No one is telling you what’s going on.
+        </p>
+
+        <h2 class="info-card">How do you deal with a smear campaign?</h2>
+
+        <p class="info-card">
+            This is the tough one. You might be told to just ignore it. Whilst there’s truth in not fueling even more reactions from these people, ignoring your own reputation being destroyed isn’t what anyone deserves. You don’t deserve to walk into school feeling like you are hated for no reason. It’s deeply abusive and will gradually start to decline your mental health. It’s important to find community in this time. Where you feel safe and supported. These things will die down over time, but you can still protect yourself in different ways.
+        </p>
+
+        <div class="info-grid info-card">
+            <div class="info-grid-item" style="text-align: center;">
+                <div class="image-frame">
+                    <img src="images/phone.png" alt="anti-bullying" width="300">
+                </div>
             </div>
-            <ul class="nav-links">        
-                <li><a href="deepdives.html">Articles</a></li>
-                <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
-                <li><a href="about-consano-bullying-support.html">About</a></li>
-            </ul>
-        </nav>
-<script src="navigation.js"></script>
-  <title> Signs Gossip is going too far and how to deal with a Smear Campaign</title>
- 
+            <div class="info-grid-item">
+                <p><em>Check off steps you might consider taking to protect your space:</em></p>
+                <ul class="action-checklist">
+                    <li><input type="checkbox"> Maybe you ask your teacher if you can move seats</li>
+                    <li><input type="checkbox"> Maybe you have to move school</li>
+                    <li><input type="checkbox"> Maybe you have to move to a new class</li>
+                    <li><input type="checkbox"> Maybe you drop out of that club or lesson</li>
+                    <li><input type="checkbox"> Maybe you start hanging out with friends outside of school more</li>
+                </ul>
+            </div>
+        </div>
 
-<div class="container">
-<h1 class="info-card">Is It Really Just Gossip?</h1>
+        <p class="info-card">
+            Whatever it is, tell people what you are going through and your worries. You deserve people around you that see you and treat you for who you truly are. If you know you’ve done nothing wrong or nothing that serious you shouldn’t be exiled for it. These changes may seem extremely difficult. And they are. Unless it is extremely serious, you don’t need to spend time trying to find out what is being spread exactly. Chances are it keeps changing, is extremely untrue, and the process of finding out might make things worse. You may feel more hurt, or even more gossip may spread.
+        </p>
 
-<p>Gossip isn’t inherently a negative thing. Sometimes it’s just a way of bonding or finding out you think the same way as someone else. But sometimes gossip is used as something far darker. A weapon. Literally it can feel like someone is trying to destroy you with it.</p>
+        <!-- Interactive Activity Box -->
+        <div class="activity-box info-card">
+            <h3><strong>Activity:</strong> Build Your Safe Circles</h3>
+            <p>Add people, groups, or spaces where you feel safe or could potentially find support:</p>
+            <div class="activity-input-group">
+                <input type="text" id="circleInput" placeholder="e.g. Art Club, Older sister, Friend outside school">
+                <button type="button" id="addCircleBtn">Add to Safe Circle</button>
+            </div>
+            <div class="circles-list" id="circlesList">
+                <div class="circle-chip">
+                    <span>Family member</span>
+                    <span class="remove-btn">&times;</span>
+                </div>
+                <div class="circle-chip">
+                    <span>Counselor or trusted teacher</span>
+                    <span class="remove-btn">&times;</span>
+                </div>
+            </div>
+        </div>
 
-<p>Maybe you confronted someone in private, but now everyone else is starting to act strange or even rude towards you.
- You know what’s happened, and maybe you didn’t hear it so you can’t give evidence to a teacher,
- but you know. 
- <br> <br> You may have become victim to a  <strong> smear campaign </strong>. <br> <br>
- This is where your reputation starts to be tarnished in favour of protecting someone else, someone who hurt you. 
- Maybe now you’re being treated like you did something terrible.
- Now you’re being looked at with disgust or heads are turning as you walk to school. Girls are hitting you with their handbags as they shove past you. Now perhaps people who were your friends are even trying to avoid you out of no where. But the worst bit? No one is telling you what’s going on.</p>
+        <h2 class="info-card">What if there’s nowhere you can move or go?</h2>
+        <p class="info-card">
+            I’m really sorry that you are going through this. But the fact you found this website is a sign that you can get through it. Because you can surround your media consumption with uplifting confidence building activities that can make it easier to ignore the situation. Because you don’t have to ignore yourself just because you can’t physically get away. Check out our <strong>defend</strong> and <strong>healing</strong> sections to learn ways you can build up your resilience.
+        </p>
 
+        <h2 class="info-card">Distract yourself</h2>
+        <div class="info-grid info-card">
+            <div class="info-grid-item" style="text-align: center;">
+                <div class="image-frame">
+                    <img src="images/read.png" alt="anti-bullying" width="400">
+                </div>
+            </div>
+            <div class="info-grid-item">
+                <p>
+                    Find a passion project, a subject you want to excel in, a new hobby, a new goal, a university you want to get into, and go really into it.
+                    <br><br>
+                    Immersing yourself in something else will help you get through the worst of it because your mind can be so preoccupied on working on yourself that you can genuinely ignore what is going on behind your back more easily.
+                    <br><br>
+                    Plus you get to make progress on something different and build new skills!
+                </p>
+            </div>
+        </div>
 
-<h2 class="info-card" >How do you deal with a smear campaign?</h2>
+        <h1 class="info-card" style="text-align: center; margin-top: 40px;">Watch out for the big gossipers. But how can you spot them?</h1>
 
-<p>This is the tough one. You might be told to just ignore it. Whilst there’s truth in not fueling even more reactions from these people, ignoring your own reputation being destroyed isn’t what anyone deserves. You don’t deserve to walk into school feeling like you are hated for no reason. It’s deeply abusive and will gradually start to decline your mental health. It’s important to find community in this time. Where you feel safe and supported. These things will die down over time, but you can still protect yourself in different ways.</p>
-<div class="info-grid">
+        <p style="text-align: center;"><em>Click on each flag below to read more details:</em></p>
 
-<img src="images/phone.png" alt="anti-bullying" width="300">
-<ul>
-<li>Maybe you ask your teacher if you can move seats</li>
-<li>Maybe you have to move school.</li>
-<li>Maybe you have to move to a new class.</li>
-<li>Maybe you drop out of that club or lesson.</li>
-<li>Maybe you start hanging out with friends outside of school more.</li>
-</ul>
-</div>
-<p>Whatever it is, tell people what you are going through and your worries. You deserve people around you that see you and treat you for who you truly are. If you know you’ve done nothing wrong or nothing that serious you shouldn’t be exiled for it. These changes may seem extremely difficult. And they are. Unless it is extremely serious, you don’t need to spend time trying to find out what is being spread exactly. Chances are it keeps changing, is extremely untrue, and the process of finding out might make things worse. You may feel more hurt, or even more gossip may spread.</p>
+        <!-- Interactive Gossip Spotting Accordion Cards -->
+        <div class="gossip-grid">
+            <div class="gossip-card info-card">
+                <div class="gossip-header">
+                    <span>Are they always the victim?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="gossip-content">
+                    Some people unfortunately are targets for bullying. But if you listen closely to what this friend is saying, ask yourself whether what has happened deserves such a big reaction. Do they ever take accountability for what they've done wrong?
+                </div>
+            </div>
 
-<div class="activity-box">
-  <strong>Activity:</strong> Draw circles to represent your safe spaces or potential ones. Who is in them? Do they know what’s going on or could understand?
-</div>
+            <div class="gossip-card info-card">
+                <div class="gossip-header">
+                    <span>How personal is the information they are spreading about other people?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="gossip-content">
+                    Does it seem appropriate to be sharing it considering how well you know them? If they share deep secrets about others easily, they may do the same with yours.
+                </div>
+            </div>
 
-<p> <h2 class="info-card"> What if there’s nowhere you can move or go? </h2>
-I’m really sorry that you are going through this. But the fact you found this website is a sign that you can get through it. 
-Because you can surround your media consumption with uplifting confidence building activities 
-that can make it easier to ignore the situation. Because you don’t have to ignore yourself 
-just because you can’t physically get away. Check out our <strong> defend </strong> and   <strong> healing </strong>sections to 
-learn ways you can build up your resilience</p>
+            <div class="gossip-card info-card">
+                <div class="gossip-header">
+                    <span>Does this person seem to change when they are talking about others negatively?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="gossip-content">
+                    You can often see these people switch into their true, deeply insecure yet nasty personalities. The tone of voice, the way they move their mouth, their general body language seems to change quite drastically from their usual personality in a way that is unsettling.
+                </div>
+            </div>
+        </div>
+    </div>
 
-<h2 class="info-card">Distract yourself</h2>
-<div class="info-grid">
-<img src="images/read.png" alt="anti-bullying" width="500">
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.info-card');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
 
-<p>Find a passion project, a subject you want to excel in, a new hobby, a new goal, a university you want to get into, and go really into it.
-<br> <br> Immersing yourself in something else will help you get through the worst of it because your mind can be so preoccupied on working on yourself that you can genuinely ignore what is going on behind your back more easily. 
-<br> <br>  Plus you get to make progress on something different and build new skills!</p>
-</div>
-</div>
-<h1 style="text-align: center;" > Watch out for the big gossipers. But how can you spot them? </h1>
+            cards.forEach(card => observer.observe(card));
 
-<div class="info-grid">
+            // Accordion Card Toggle
+            const gossipCards = document.querySelectorAll('.gossip-card');
+            gossipCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
 
-  <div class="info-card">
-    <p>  <h2> Are they always the victim? </h2>
-	Some people unfortunately are targets for bullying. But if you listen closely to what this friend is saying,
-	ask yourself whether what has happened deserves such a big a reaction. Do they ever take accountability for 
-	what they've done wrong </p>
-  </div>
-  <div class="info-card">
-    <p> <h2> How personal is the information they are spreading about other people? </h2>
-	Does it seem appropriate to be sharing it considering how well you know them?</p>
-	</p>
-  </div>
-    
+            // Interactive Safe Circles Activity
+            const input = document.getElementById('circleInput');
+            const addBtn = document.getElementById('addCircleBtn');
+            const list = document.getElementById('circlesList');
 
-<div class="info-card">
+            function addCircle() {
+                const text = input.value.trim();
+                if (text !== '') {
+                    const chip = document.createElement('div');
+                    chip.className = 'circle-chip';
+                    chip.innerHTML = `<span>${text}</span><span class="remove-btn">&times;</span>`;
+                    
+                    chip.querySelector('.remove-btn').addEventListener('click', () => {
+                        chip.remove();
+                    });
 
-  <h2> Does this person seem to change when they are talking about others negatively? </h2>
-  <p> You can often see these people
-  switch into their true, deeply insecure yet nasty personalities.
-  The tone of voice, the way they move their mouth, 
-  their general body language seems to change quite drastically 
-  from their usual personality in a way that is unsettling.</p> 
-  
-  
-  </div>
-<p> </p>
+                    list.appendChild(chip);
+                    input.value = '';
+                }
+            }
 
-</div>
+            addBtn.addEventListener('click', addCircle);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    addCircle();
+                }
+            });
 
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.info-card');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target); // Optional: fade in only once
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    cards.forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-
-<head>
-
+            document.querySelectorAll('.remove-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.target.parentElement.remove();
+                });
+            });
+        });
+    </script>
+</body>
 </html>
-
-
-
