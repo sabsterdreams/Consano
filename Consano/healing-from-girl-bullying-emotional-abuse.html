@@ -1,220 +1,617 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullying Between Girls in High School | Emotional Support, Resources and Awareness | Consano</title>
-    <meta name="description" content="Learn about bullying between girls in high school, mean girls, emotional abuse in friendships, and find resources for healing and resilience.">
-    <meta name="keywords" content="bullying between girls in high school, girl bullying, emotional bullying, passive-aggressive bullying, female friendships, covert bullying, mean girls, emotional abuse, toxic friendship">
+    <title>Healing from Emotional Abuse and Bullying for Teens | Consano</title>
+    <meta name="description" content="Learn practical tools, physical techniques, mindfulness practices, and resources for teens healing from emotional abuse, covert bullying, and friendship trauma.">
+    <meta name="keywords" content="healing from bullying, teen emotional abuse, physical symptoms of stress, somatic yoga for trauma, vagus nerve exercises, teen mental health support, bullying helplines">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Framed Image Styling using #ffd4ce accent */
+        .image-frame {
+            display: inline-block;
+            padding: 10px;
+            background: #ffffff;
+            border: 2px solid #ffd4ce;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+            max-width: 100%;
+        }
+
+        .image-frame:hover {
+            transform: translateY(-4px);
+        }
+
+        .image-frame img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsive Grid Layouts */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .flex-item {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        /* Header Accent Badges */
+        .section-header-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #fffaf9;
+            border: 1px solid #ffd4ce;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 25px 0 15px 0;
+        }
+
+        .section-header-box h2 {
+            margin: 0;
+            font-size: 1.25em;
+        }
+
+        /* Interactive Symptom Checklist */
+        .symptom-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .symptom-checklist li {
+            background: #ffffff;
+            border: 1px solid #ffd4ce;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .symptom-checklist li:hover {
+            background: #fff0ed;
+        }
+
+        .symptom-checklist input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #f2b5ac;
+            cursor: pointer;
+        }
+
+        /* Pink Callout Box */
+        .pink-container {
+            background: #fff0ed;
+            border-left: 5px solid #ffd4ce;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .pink-container h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        /* Interactive Healing Cards / Accordion */
+        .healing-grid {
+            display: grid;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .healing-card {
+            background: #fffaf9;
+            border: 1px solid #ffd4ce;
+            border-radius: 10px;
+            padding: 16px 20px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .healing-card:hover {
+            background: #fff5f3;
+        }
+
+        .healing-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+
+        .healing-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, margin-top 0.3s ease;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .healing-card.active .healing-content {
+            max-height: 350px;
+            margin-top: 12px;
+        }
+
+        .healing-card.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* Video Container Wrapper */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border: 3px solid #ffd4ce;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Helplines Box */
+        .helpline-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .helpline-card {
+            background: #ffffff;
+            border: 2px solid #ffd4ce;
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease;
+        }
+
+        .helpline-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .helpline-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .helpline-card a {
+            color: #d97a6e;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .helpline-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Interactive Activity Box */
+        .activity-box {
+            background: #fffaf9;
+            border: 2px solid #ffd4ce;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .activity-input-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .activity-input-group input {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+            border: 1px solid #ffd4ce;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .activity-input-group button {
+            background: #ffd4ce;
+            color: #333;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .activity-input-group button:hover {
+            background: #f2c4be;
+        }
+
+        .planner-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .planner-chip {
+            background: #ffffff;
+            border: 1px solid #ffd4ce;
+            border-radius: 20px;
+            padding: 6px 14px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+
+        .planner-chip .remove-btn {
+            color: #888;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .planner-chip .remove-btn:hover {
+            color: #e74c3c;
+        }
+
+        /* Scroll Animations */
+        .info-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .info-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
 
-        <nav>
-            <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">        
+            <li><a href="deepdives.html">Articles</a></li>
+            <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
+            <li><a href="about-consano-bullying-support.html">About</a></li>
+        </ul>
+    </nav>
+    <script src="navigation.js"></script>
+
+    <div class="container">
+
+        <h1 class="info-card">How to heal from emotional abuse and bullying</h1>
+
+        <div class="flex-container info-card">
+            <div class="flex-item" style="text-align: center;">
+                <div class="image-frame">
+                    <img src="images/healing.png" alt="how-to-heal" width="350">
+                </div>
             </div>
-            <ul class="nav-links">        
-                <li><a href="deepdives.html">Articles</a></li>
-                <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
-                <li><a href="about-consano-bullying-support.html">About</a></li>
-            </ul>
-        </nav>
-<script src="navigation.js"></script>
-  
+            <div class="flex-item">
+                <h2>Physical Symptoms of Bullying Stress</h2>
+                <p>
+                    Spending every day being subject to passive aggressive comments, dirty looks and snide remarks is likely putting you in a state of hypervigilance. The bullying can be why you always feel on edge at school.
+                </p>
+            </div>
+        </div>
 
-   <title>Healing from Emotional Abuse and Bullying for Teens</title>
+        <p class="info-card">
+            The stress you are feeling is likely putting your body in a defensive mode like fight or flight.
+            <br><br>
+            This will likely mean you’re holding a lot of tension in your body, and that the trauma is being stored there too. It makes it difficult for you to focus and feel relaxed.
+            <br><br>
+            These situations can be traumatising and have negative impacts on your mental health.
+        </p>
 
-<body>
-<div >  <div class="container">
+        <div class="section-header-box info-card">
+            <div class="image-frame" style="padding: 5px; margin: 0;">
+                <img src="images/cloud.png" alt="emotional reactions" width="80">
+            </div>
+            <h2>How you may be feeling from dealing with emotional abuse</h2>
+        </div>
 
+        <p class="info-card"><em>Select any feelings or symptoms you have experienced recently:</em></p>
 
+        <!-- Interactive Symptom Checklist -->
+        <ul class="symptom-checklist info-card">
+            <li><input type="checkbox"> Regular nightmares, flashbacks, or obsessive rumination</li>
+            <li><input type="checkbox"> Trouble sleeping</li>
+            <li><input type="checkbox"> Sudden emotional distress from reminders of past events</li>
+            <li><input type="checkbox"> Decreased confidence and doubting your perception of reality</li>
+            <li><input type="checkbox"> Panic attacks or intense waves of anxiety</li>
+            <li><input type="checkbox"> Hypervigilance: feeling constantly on edge, especially in class or before exams</li>
+            <li><input type="checkbox"> Being startled more easily</li>
+            <li><input type="checkbox"> Increased tendency to socially isolate yourself</li>
+            <li><input type="checkbox"> Intrusive negative thoughts</li>
+            <li><input type="checkbox"> Hopelessness about the future or even just getting through the day</li>
+        </ul>
 
+        <div class="pink-container info-card">
+            <h2>Who could you talk to in person for dealing with emotional abuse?</h2>
+            <p>
+                You don’t have to deal with this on your own or continue suffering. Sometimes the best course of action can be for an adult to confront the individuals if their behaviour is increasingly serious and moving into harassment.
+            </p>
+        </div>
 
+        <p class="info-card">
+            Talking to your GP and asking to be referred to counselling or professional therapy is a great step to take to protect your mental health.
+        </p>
 
-  <h1 class="info-card" >How to heal from emotional abuse and bullying</h1>
-  
-  <div class="flex-container">
-  <div class="flex-item2">  <img src="images/healing.png" alt="how-to-heal" width="400" height="400">
-  </div>
-	  <h2> Physical Symptoms of Bullying Stress</h2>
-  <div class="flex-item2"> 	<p> Spending everyday being subject to passive aggressive comments, dirty looks and snide remarks is likely putting you in a state of hypervigilance. The bullying can be why you always feel on edge at school.
+        <div class="section-header-box info-card">
+            <div class="image-frame" style="padding: 5px; margin: 0;">
+                <img src="images/sun.png" alt="healing steps" width="80">
+            </div>
+            <h2>What can you do to heal from bullying while you wait for professional help?</h2>
+        </div>
 
- </div>
-  
-</div>
+        <h3 class="info-card">Why it's important to validate your pain when you've been bullied</h3>
+        <p class="info-card">
+            Read the information on this website to realise that you are not alone in feeling like this. Understanding the signs of abuse that go under the surface can help in showing you the extent of what you've been through.
+        </p>
 
-<br> <br> The stress you are feeling is likely putting your body in a defensive mode like fight or flight. 
+        <h3 class="info-card">Physical ways to heal from bullying and emotional abuse</h3>
 
-<br><br> This will likely mean you’re holding a lot of tension in your body, and that the trauma is being stored there too. It makes it difficult for you to focus and feel relaxed.
+        <div class="flex-container info-card">
+            <div class="flex-item" style="text-align: center;">
+                <div class="image-frame">
+                    <img src="images/yoga.png" alt="somatic yoga and deep breathing" width="280">
+                </div>
+            </div>
+            <div class="flex-item">
+                <p>
+                    <strong>Deep Breathing Exercises:</strong> These are not to stop you from feeling, but rather giving your body the space to actually fully feel the emotions and pain you have and let it out.
+                    <br><br>
+                    <strong>Somatic Yoga:</strong> This is a mindfulness practice that involves slow yoga poses that invite you to increase your awareness of your bodily sensations and release tension stored in the body. It’s a lot gentler than ordinary yoga (which is still also a helpful tool).
+                </p>
+            </div>
+        </div>
 
-<br> <br> These situations can be traumatising and have negative impacts on your mental health.
-  
-<div class="imtextdark"> 
-<img src="images/cloud.png" alt="how-to-heal" width="150" height="100">
+        <!-- Guided Somatic Yoga Video Embed -->
+        <div class="video-container info-card">
+            <iframe src="https://www.youtube.com/embed/rjU2C5bYTX4?si=4e3T7YRAhyacL5oW&amp;start=4" title="Somatic Yoga Session" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-<h2> How you may be feeling from dealing with emotional abuse</h2>
-</div>
-<ul> 
-<li>Regular nightmares, flashbacks, or obsessive rumination</li>
-<li>Trouble sleeping</li>
-<li>Sudden emotional distress from reminders of past events</li>
-<li>Decreased confidence and doubting your perception of reality</li>
-<li>Panic attacks or intense waves of anxiety</li>
-<li>Hypervigilance — feeling constantly on edge, especially in class or before exams</li>
-<li>Being startled more easily</li>
-<li>Increased tendency to socially isolate yourself</li>
-<li>Intrusive negative thoughts</li>
-<li>Hopelessness about the future or even just getting through the day</li>
-</ul>
-<div class="pink-container">
-<h2> Who could you talk to in person for dealing with emotional abuse?</h2>
-	
-<p>You don’t have to deal with this on your own or continue suffering. 
-Sometimes the best course of action can be for an adult to confront the individuals if their behaviour 
-is increasingly serious and moving into harrassment.  </p>
-</div> 
-<p> Talking to your GP and asking to be referred to counselling or professional therapy is a great step to take to protect your mental-health </p> 
-<div class="imtextdark"> 
-<img src="images/sun.png" alt="how-to-heal" width="150" height="150">
+        <p class="info-card">
+            <strong>Exercise:</strong> Will increase the blood flow to your brain and therefore improve your mood, sleep and cognitive function. Exercising regularly, perhaps even trying out a new sport, will give you sustained benefits.
+        </p>
 
-<h2> What can you do to heal from bullying while you wait for professional help?</h2>
-</div>
-<div style="text-align:left"> 
-<h3>Why it's important to validate your pain when you've been bullied </h3> 
-</div> 
-<p> Read the information on this website to realise that you are not alone in feeling like this. 
-Understanding the signs of abuse that goes under the surface can help in showing you the extent of what you've been through </p>
-<br> <br>
-<div style="text-align:left"> 
-<h3> Physical ways to heal from bullying and emotional abuse </h3>
-</div>  
+        <p class="info-card">
+            <strong>Vagus Nerve Exercises:</strong> The vagus nerve is the longest nerve in the body and impacts a lot of different functions. When you are constantly under stress, the vagus nerve can be overstimulated, making you feel less relaxed. There are simple, safe exercises you can do to bring your body out of this state and into a calmer one.
+            <br><br>
+            Check out this video from a certified psychologist and EMDR therapist to follow along and learn more:
+        </p>
 
-<div class="flex-container">
-  <div class="flex-item2">  <img src="images/yoga.png" alt="how-to-heal" width="50%">
-  </div>
-  <div class="flex-item2">    <p> <strong> Deep Breathing Exercises </strong>,  these are to not stop you from feeling, but rather giving your body the space to actually fully feel the emotions and pain you have and let it out.
+        <!-- Vagus Nerve Exercise Video Embed -->
+        <div class="video-container info-card">
+            <iframe src="https://www.youtube.com/embed/HZSBFDJ8GY4?si=Nr4QSsrOC3qFUbOi" title="Vagus Nerve Exercises" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-<br> <br> 
-<strong> Somatic Yoga </strong>This is a mindfulness practice that involves slow yoga poses that invite you to increase you awareness of your bodily sensations and release tension stored in the body. It’s a lot gentler than ordinary yoga (which is still also a helpful tool).  
-</p>
- </div>
-  
-</div>
+        <h3 class="info-card">Activities for the mind that can help when dealing with bullying or emotional abuse</h3>
 
+        <!-- Mind Practices Accordion -->
+        <div class="healing-grid info-card">
+            <div class="healing-card">
+                <div class="healing-header">
+                    <span><i class="fas fa-book-open"></i> Journaling & Affirmations</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="healing-content">
+                    This is a great tool for self reflection and building a more positive relationship with yourself. Try out the activities around the website and the journaling prompts sheet in the resources section. You can also write positive affirmations about yourself to build a habit of validating yourself and being the friend to yourself that you deserve.
+                </div>
+            </div>
 
-<div style="text-align:center"> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rjU2C5bYTX4?si=4e3T7YRAhyacL5oW&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div> 
+            <div class="healing-card">
+                <div class="healing-header">
+                    <span><i class="fas fa-tree"></i> Nature Walks</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="healing-content">
+                    Research from the University of Exeter has shown that exposure and walks in nature improve your brain activity, mental health, and can lift your mood.
+                </div>
+            </div>
 
-<p> <strong> Exercise </strong> Will increase the blood flow to your brain and therefore improve your mood, sleep and cognitive function. Exercising regularly , perhaps even trying out a new sport, will give you sustained benefits. </p> 
-<p> <strong> Vagus Nerve Exercises </strong>  The vagus nerve is the longest nerve in the body and has impact on a lot of different things. When you are constantly under stress, the vagus nerve can be overstimulated, making you feel less relaxed. There are simple, safe exercises you can do to bring your body out of this state and into a calmer one.<br>
-<br>Check out this video from a certified psycologist and EMDR therapist to follow along to and learn more about this. </p>
-<div style="text-align:center"> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HZSBFDJ8GY4?si=Nr4QSsrOC3qFUbOi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div> 
-<h3> Activities for the mind that can help when dealing with bullying or emotional abuse</h3>
+            <div class="healing-card">
+                <div class="healing-header">
+                    <span><i class="fas fa-music"></i> Listening to Music</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="healing-content">
+                    Whether this be your favourite artist or some calming jazz, music will certainly elevate your mood and remind you of the more positive parts of your life.
+                </div>
+            </div>
 
+            <div class="healing-card">
+                <div class="healing-header">
+                    <span><i class="fas fa-spa"></i> Meditation & Present-Moment Grounding</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="healing-content">
+                    This can be particularly useful when you’re in the midst of negative situations. Bringing yourself back to the present moment can help you to ground yourself and remind yourself that these people don’t have real power to control you.
+                    <br><br>
+                    Observing the memories that could come to the surface when you meditate can help you to understand what is affecting you most. It is also a sign that your body and mind are trying to heal. You can start with 5-minute meditations or check out apps like Headspace, Calm, or the <a href="https://www.bbc.co.uk/sounds/brand/m00175qd" target="_blank">BBC Music and Meditation Podcast</a>.
+                </div>
+            </div>
+        </div>
 
+        <!-- Meditation Video Embed -->
+        <div class="video-container info-card">
+            <iframe src="https://www.youtube.com/embed/aU7qCFrDw40?si=iNucXNEcNA8Lkq-o" title="Guided Meditation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
+        <div class="flex-container info-card">
+            <div class="flex-item" style="text-align: center;">
+                <div class="image-frame">
+                    <img src="images/plant.png" alt="building skills and growth" width="220">
+                </div>
+            </div>
+            <div class="flex-item">
+                <p>
+                    <strong>Build your confidence by learning new skills:</strong> These not only serve as a good distraction, but make you more confident and improve your self-esteem. Knitting, embroidery, guitar, piano, drawing, or Pinterest board making are just some ideas of things you could start doing.
+                    <br><br>
+                    Take advantage of different opportunities to deepen your talents or meet new people outside your school circle.
+                </p>
+            </div>
+        </div>
 
-<div class="flex-container"> <img src="images/plant.png" alt="how-to-heal" width="300" height="300">
-  <div class="flex-item2"> 
-  </div>
-  <div class="flex-item2">  
-  
-  <strong> Journalling </strong> 
-This is a great tool for self reflection and building a more positive relationship with yourself. Try out the activities around the website but also the journalling prompts sheet in the resources section. You can also write positive affirmations about yourself to build a habit of valid
-ating yourself and being the friend to yourself that you deserve. 
-<br> <br> 
-<strong> Nature Walks </strong> 
-Research from the University of Exeter has shown that exposure and walks in nature improves your brain activity, mental health and can lift your mood. 
-</div> 
+        <!-- Interactive Coping Tool Box -->
+        <div class="activity-box info-card">
+            <h3><i class="fas fa-seedling"></i> <strong>Activity:</strong> Build Your Personal Healing Toolset</h3>
+            <p>Add skills, hobbies, or grounding practices you would like to try out this week:</p>
+            <div class="activity-input-group">
+                <input type="text" id="plannerInput" placeholder="e.g. 10-minute nature walk, Learning guitar riff, Somatic stretch">
+                <button type="button" id="addPlannerBtn">Add to My Plan</button>
+            </div>
+            <div class="planner-list" id="plannerList">
+                <div class="planner-chip">
+                    <span>5-minute morning meditation</span>
+                    <span class="remove-btn">&times;</span>
+                </div>
+                <div class="planner-chip">
+                    <span>Journaling 3 positive affirmations</span>
+                    <span class="remove-btn">&times;</span>
+                </div>
+            </div>
+        </div>
 
- </div>
+        <h1 class="info-card" style="margin-top: 40px;">Helplines and Resources for Talking About Emotional Abuse or Bullying</h1>
 
-<strong> Music </strong> 
+        <!-- Helplines Grid -->
+        <div class="helpline-box info-card">
+            <div class="helpline-card">
+                <i class="fas fa-phone-alt fa-2x" style="color: #f2b5ac; margin-bottom: 10px;"></i>
+                <h3>ChildLine</h3>
+                <p><strong>0800 1111</strong></p>
+                <p>Free, confidential support open 24 hours a day, 7 days a week.</p>
+            </div>
 
-Whether this be your favourite artist or some calming jazz, music will certainly elevate your mood and remind you of the more positive parts of your life. 
+            <div class="helpline-card">
+                <i class="fas fa-comments fa-2x" style="color: #f2b5ac; margin-bottom: 10px;"></i>
+                <h3>Kooth</h3>
+                <p><a href="https://www.kooth.com/" target="_blank">visit kooth.com</a></p>
+                <p>Text-chat anonymously with a mental health practitioner about whatever you’re feeling.</p>
+            </div>
 
-</p> 
+            <div class="helpline-card">
+                <i class="fas fa-heart fa-2x" style="color: #f2b5ac; margin-bottom: 10px;"></i>
+                <h3>Mind</h3>
+                <p><strong>0300 102 1234</strong></p>
+                <p>Mental health support line open 9am to 6pm, Monday to Friday.</p>
+            </div>
+        </div>
 
-<p>
+        <p class="info-card" style="text-align: center; font-size: 1.1em; margin-top: 30px; font-weight: bold;">
+            Through building your own confidence, you are also building an energetic boundary that makes it less likely for people to hurt you.
+        </p>
 
- 
-<strong> Meditation </strong> 
-his can be particularly useful when you’re in the midst of these negative situations. Bringing yourself back to the present moment can help you to ground yourself and remind yourself that these people don’t have real power to control you.
-<br><br>  Observing the memories that could come to the surface when you do meditate can help you to understand what is affecting you most as well. It is also a sign that your body and mind are trying to heal which is always good but can be difficult. 
-<br> <br> You could start with the mindly 5 minute meditations. These are short and simple to follow along to but will still be beneficial. Following on from that  you could try out apps like Headspace and Calm or the <a href="https://www.bbc.co.uk/sounds/brand/m00175qd">BBC Music and Meditation Podcast</a>
-</p> 
-<div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aU7qCFrDw40?si=iNucXNEcNA8Lkq-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div> 
- 
- <p> <strong> Build your confidence by learning new skills. </strong> 
- these not only serve as a good distraction, but make you more intelligent and improve your self-esteem. Knitting, embroidery, guitar, piano, drawing, pinterest board making ( I argue this could be a skill of its own) are just some ideas of things you could start doing.  </p>
+    </div>
 
-<p> Take advantage of different opportunities to deepen your talents or meet new people </p> 
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.info-card');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
 
-<h1 class="info-card" >Helplines and Resources for talking about emotional abuse or bullying</h1>
+            cards.forEach(card => observer.observe(card));
 
-<p> ChildLine 0800 1111 .Open 24 hours a day and 7 days a week  </p>
-<p> <a href="https://www.kooth.com/">Kooth</a>  :  You can text-chat with a mental health practitioner about whatever you’re feeling.</p>
-<p> Mind: 0300 102 1234. For mental health struggles the support line is open 9am to 6pm  </p> 
+            // Healing Cards Accordion Toggle
+            const healingCards = document.querySelectorAll('.healing-card');
+            healingCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
 
-<p>Through building your own confidence, you are also building an energetic boundary that makes it less likely for people to hurt you. 
-</p> 
-</div> 
-  </div>
+            // Interactive Healing Planner Activity
+            const input = document.getElementById('plannerInput');
+            const addBtn = document.getElementById('addPlannerBtn');
+            const list = document.getElementById('plannerList');
+
+            function addPlannerItem() {
+                const text = input.value.trim();
+                if (text !== '') {
+                    const chip = document.createElement('div');
+                    chip.className = 'planner-chip';
+                    chip.innerHTML = `<span>${text}</span><span class="remove-btn">&times;</span>`;
+                    
+                    chip.querySelector('.remove-btn').addEventListener('click', () => {
+                        chip.remove();
+                    });
+
+                    list.appendChild(chip);
+                    input.value = '';
+                }
+            }
+
+            addBtn.addEventListener('click', addPlannerItem);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    addPlannerItem();
+                }
+            });
+
+            document.querySelectorAll('.planner-chip .remove-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.target.parentElement.remove();
+                });
+            });
+        });
+    </script>
 </body>
-
-
-
-
-
-
-</p>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.info-card');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target); // Optional: fade in only once
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    cards.forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 </html>
-
-
-
-
-
-
