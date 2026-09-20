@@ -3,120 +3,408 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullying Between Girls in High School | Emotional Support, Resources and Awareness | Consano</title>
-    <meta name="description" content="Learn about bullying between girls in high school, mean girls, emotional abuse in friendships, and find resources for healing and resilience.">
-    <meta name="keywords" content="bullying between girls in high school, girl bullying, emotional bullying, passive-aggressive bullying, female friendships, covert bullying, mean girls, emotional abuse, toxic friendship">
+    <title>Ways to Defend Yourself Against Emotional Abuse That Aren't Just 'Speak Up' | Consano</title>
+    <meta name="description" content="Learn practical strategies and emotional shields to defend yourself against emotional abuse, passive-aggressive behavior, and friendship toxicity.">
+    <meta name="keywords" content="bullying between girls in high school, girl bullying, emotional bullying, boundaries, emotional shields, female friendships, covert bullying, toxic friendship, defense strategies">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Framed Image Styling using #ffd4ce accent */
+        .image-frame {
+            display: inline-block;
+            padding: 10px;
+            background: #ffffff;
+            border: 2px solid #ffd4ce;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+            max-width: 100%;
+        }
+
+        .image-frame:hover {
+            transform: translateY(-4px);
+        }
+
+        .image-frame img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Shield Cards Layout */
+        .shield-grid {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .shield-card {
+            background: #fffaf9;
+            border: 1px solid #ffd4ce;
+            border-left: 5px solid #ffd4ce;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .shield-card-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .shield-card-title {
+            font-size: 1.15em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        /* Interactive Accordion for Reflection Sections */
+        .faq-accordion {
+            display: grid;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .faq-card {
+            background: #ffffff;
+            border: 1px solid #ffd4ce;
+            border-radius: 10px;
+            padding: 16px 20px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .faq-card:hover {
+            background: #fff5f3;
+        }
+
+        .faq-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, margin-top 0.3s ease;
+            color: #555;
+            font-size: 0.98em;
+        }
+
+        .faq-card.active .faq-content {
+            max-height: 200px;
+            margin-top: 12px;
+        }
+
+        .faq-card.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* Interactive Shield Collection Activity Box */
+        .activity-box {
+            background: #fffaf9;
+            border: 2px solid #ffd4ce;
+            border-radius: 12px;
+            padding: 22px;
+            margin: 35px 0;
+        }
+
+        .activity-input-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .activity-input-group input {
+            flex: 1;
+            min-width: 220px;
+            padding: 10px 14px;
+            border: 1px solid #ffd4ce;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .activity-input-group button {
+            background: #ffd4ce;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .activity-input-group button:hover {
+            background: #f2c4be;
+        }
+
+        .shields-collection {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .shield-badge {
+            background: #ffffff;
+            border: 1px solid #ffd4ce;
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 0.92em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .shield-badge i {
+            color: #f2b5ac;
+        }
+
+        .shield-badge .remove-btn {
+            color: #888;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .shield-badge .remove-btn:hover {
+            color: #e74c3c;
+        }
+
+        /* Showcase Images Grid */
+        .showcase-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        /* Scroll Animations */
+        .info-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .info-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
 
-        <nav>
-            <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Go to home page friendship issues" width="150"></a>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">        
+            <li><a href="deepdives.html">Articles</a></li>
+            <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
+            <li><a href="about-consano-bullying-support.html">About</a></li>
+        </ul>
+    </nav>
+    <script src="navigation.js"></script>
+
+    <div class="container">
+        <h1 class="info-card">Build your shield against emotional abuse</h1>
+
+        <p class="info-card">
+            Your shield is what protects your inner peace. It’s built from pieces of life lessons and wisdom. What’s great is that you can learn about these now to save you from going through more difficult experiences.
+        </p>
+
+        <p class="info-card">
+            Standing up for yourself doesn’t have to look the same for every scenario.
+        </p>
+
+        <p class="info-card">
+            Here are some shields you may want to add to your collection:
+        </p>
+
+        <!-- Shield Cards Section -->
+        <div class="shield-grid">
+            <div class="shield-card info-card">
+                <div class="image-frame">
+                    <img src="images/ask.png" alt="Boundary questions" width="180">
+                </div>
+                <div class="shield-card-text">
+                    <div class="shield-card-title">Shield 1: Calling Out Broken Boundaries</div>
+                    <p>
+                        For when boundaries are broken, asking <em>‘What do you mean by that?’</em> or <em>‘What did you say?’</em> or <em>‘I don’t like being spoken to like that’</em> can help catch the behavior right in its tracks.
+                    </p>
+                </div>
             </div>
-            <ul class="nav-links">        
-                <li><a href="deepdives.html">Articles</a></li>
-                <li><a href="girl-bullying-support-toolkit.html">Resources</a></li>
-                <li><a href="about-consano-bullying-support.html">About</a></li>
-            </ul>
-        </nav>
-<script src="navigation.js"></script>
-  
-<title> Ways to Defend Yourself Against Emotional Abuse that aren't just Speak Up</title>
-<body>
-  <div class="container">
-  <h1 class="info-card" >Build your shield against emotional abuse</h1>
-<p> Your shield is what protects your inner peace. It’s built from pieces of life lessons and wisdom. 
-What’s great is that you can learn about these now to save you from going through more difficult experiences </p> 
 
-<p> Standing up for yourself doesn’t have to look the same for every scenario.</p> 
-<p> Here are some shields you may want to add to your collection </p>
-   <div class="imtextdark">
-<img src="images/ask.png" alt="anti-bullying" width="200">
-<p> For when boundaries are broken , asking 
-‘What do you mean by that?’ or ‘What did you say?’ 
-or ‘I don’t like being spoken to like that’
- can help catch the behaviour. </p> 
-</div>
-<div class="imtextdark">
-<img src="images/trust.png" alt="anti-bullying" width="200">
-<p> This doesn’t have to be for telling the people off, but rather for getting more tailored advice and support for yourself.  </p> 
-</div>
-<div class="imtextdark">
-<img src="images/new.png" alt="anti-bullying" width="200" height="200">
-<p>  Knowing you have friends outside of school can make managing this so much easier as you feel more secure. Join a new club, start volunteering. Join free virtual or in person work experience programmes. These are great as they connect you safely  to those you may not have ever met on your walk to school, but also gives you skills that you can carry into your future and university application. Plus, they serve as a good distraction to the drama.</p> 
-</div>
-<div style="text-align: center;">
-  <img src="images/shieldstwo.png" alt="anti-bullying" width="600">
-</div>
+            <div class="shield-card info-card">
+                <div class="image-frame">
+                    <img src="images/trust.png" alt="Trusted advice" width="180">
+                </div>
+                <div class="shield-card-text">
+                    <div class="shield-card-title">Shield 2: Seeking Tailored Support</div>
+                    <p>
+                        This doesn’t have to be for telling the people off, but rather for getting more tailored advice and support for yourself from people you trust.
+                    </p>
+                </div>
+            </div>
 
-<div style="text-align: center;">
-  <img src="images/threeshields.png" alt="anti-bullying" width="600">
-</div>
+            <div class="shield-card info-card">
+                <div class="image-frame">
+                    <img src="images/new.png" alt="New communities and hobbies" width="180">
+                </div>
+                <div class="shield-card-text">
+                    <div class="shield-card-title">Shield 3: Expanding Your Circle</div>
+                    <p>
+                        Knowing you have friends outside of school can make managing this so much easier as you feel more secure. Join a new club or start volunteering. Join free virtual or in person work experience programmes. These are great as they connect you safely to those you may not have ever met on your walk to school, but also give you skills that you can carry into your future and university applications. Plus, they serve as a good distraction from the drama.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-<div style="text-align: center;">
-  <img src="images/shieldstwoo.png" alt="anti-bullying" width="600">
-</div>
+        <!-- Shield Showcase Visuals -->
+        <div class="showcase-grid info-card">
+            <div class="image-frame">
+                <img src="images/shieldstwo.png" alt="Emotional defense shields" width="600">
+            </div>
+            <div class="image-frame">
+                <img src="images/threeshields.png" alt="Three shields of protection" width="600">
+            </div>
+            <div class="image-frame">
+                <img src="images/shieldstwoo.png" alt="Additional defense strategies" width="600">
+            </div>
+        </div>
 
-<p>Truth be told, sometimes people are just unlucky. It’s never your fault that you’re being treated poorly, as you don’t deserve to be. </p>
+        <p class="info-card">
+            Truth be told, sometimes people are just unlucky. It’s never your fault that you’re being treated poorly, as you don’t deserve to be.
+        </p>
 
-<h2 class="info-card" >What if I didn't do this when this happened?</h2>
-<p>Don’t beat yourself up if you have made mistakes in how you react to emotional abuse. You weren’t expecting it so if you’re not well equip you can’t blame yourself for doing what you could. You’ve already You’re still here, and that’s great!  </p>
-<h2 class="info-card" >What if it doesn't work</h2>
-<p>Some people are so cunning and manipulative ( or insecure), that they are literally wired to seek chaos.This is why walking away and focusing on healing yourself can often be the best solution  </p>
-<div class="activity-box">
-  <strong>Activity:</strong> Do you have any life lessons you've learnt that help you today? Draw some shields and write them inside. 
-</div>
+        <!-- Interactive FAQ Accordion -->
+        <div class="faq-accordion">
+            <div class="faq-card info-card">
+                <div class="faq-header">
+                    <span>What if I didn't do this when it happened?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-content">
+                    Don’t beat yourself up if you have made mistakes in how you react to emotional abuse. You wasn’t expecting it, so if you’re not well equipped, you can’t blame yourself for doing what you could at the time. You’re still here, and that’s great!
+                </div>
+            </div>
 
+            <div class="faq-card info-card">
+                <div class="faq-header">
+                    <span>What if it doesn't work?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-content">
+                    Some people are so cunning and manipulative (or deeply insecure) that they are literally wired to seek chaos. This is why walking away and focusing on healing yourself can often be the best solution.
+                </div>
+            </div>
+        </div>
 
-</div>
+        <!-- Interactive Shield Activity -->
+        <div class="activity-box info-card">
+            <h3><i class="fas fa-shield-alt"></i> <strong>Activity:</strong> Build Your Personal Shield Collection</h3>
+            <p>Do you have any life lessons or personal mantras that help protect your peace today? Add them to your shield wall:</p>
+            <div class="activity-input-group">
+                <input type="text" id="shieldInput" placeholder="e.g. 'Their reaction is not my responsibility'">
+                <button type="button" id="addShieldBtn">Add to Shield Wall</button>
+            </div>
+            <div class="shields-collection" id="shieldsList">
+                <div class="shield-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>I don't owe anyone my inner peace</span>
+                    <span class="remove-btn">&times;</span>
+                </div>
+                <div class="shield-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Walking away is strength, not weakness</span>
+                    <span class="remove-btn">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.info-card');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
 
+            cards.forEach(card => observer.observe(card));
 
+            // FAQ Accordion Toggle
+            const faqCards = document.querySelectorAll('.faq-card');
+            faqCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
 
+            // Interactive Shield Collection Activity
+            const input = document.getElementById('shieldInput');
+            const addBtn = document.getElementById('addShieldBtn');
+            const list = document.getElementById('shieldsList');
 
+            function addShield() {
+                const text = input.value.trim();
+                if (text !== '') {
+                    const badge = document.createElement('div');
+                    badge.className = 'shield-badge';
+                    badge.innerHTML = `<i class="fas fa-shield-alt"></i><span>${text}</span><span class="remove-btn">&times;</span>`;
+                    
+                    badge.querySelector('.remove-btn').addEventListener('click', () => {
+                        badge.remove();
+                    });
 
+                    list.appendChild(badge);
+                    input.value = '';
+                }
+            }
+
+            addBtn.addEventListener('click', addShield);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    addShield();
+                }
+            });
+
+            document.querySelectorAll('.shield-badge .remove-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.target.parentElement.remove();
+                });
+            });
+        });
+    </script>
 </body>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.info-card');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target); // Optional: fade in only once
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    cards.forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 </html>
-
-
-
-
-
-
