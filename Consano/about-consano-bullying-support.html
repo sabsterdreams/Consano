@@ -113,7 +113,7 @@
             margin-bottom: 0;
         }
 
-        /* Interactive Contact Card & Form */
+        /* Direct Contact Box */
         .contact-box {
             background: #fff0ed;
             border: 2px solid #ffd4ce;
@@ -128,75 +128,41 @@
             font-size: 1.4em;
         }
 
-        .email-display-btn {
+        .email-action-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .email-btn {
             display: inline-flex;
             align-items: center;
             gap: 10px;
             background: #ffffff;
             border: 2px solid #ffd4ce;
-            padding: 10px 20px;
+            padding: 12px 22px;
             border-radius: 30px;
             font-weight: bold;
             color: #333;
             text-decoration: none;
-            margin: 15px 0;
             cursor: pointer;
             transition: background 0.2s ease, transform 0.2s ease;
+            font-size: 0.95em;
         }
 
-        .email-display-btn:hover {
+        .email-btn:hover {
             background: #fffaf9;
-            transform: scale(1.02);
+            transform: translateY(-2px);
         }
 
-        .contact-form {
-            display: grid;
-            gap: 12px;
-            max-width: 500px;
-            margin: 20px auto 0 auto;
-            text-align: left;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ffd4ce;
-            border-radius: 8px;
-            outline: none;
-            font-family: inherit;
-            box-sizing: border-box;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .contact-form button {
+        .email-btn-primary {
             background: #ffd4ce;
-            color: #333;
-            border: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.2s ease;
         }
 
-        .contact-form button:hover {
+        .email-btn-primary:hover {
             background: #f2c4be;
-        }
-
-        /* Confirmation Toast Message */
-        #toastMsg {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background: #e8f5e9;
-            color: #2e7d32;
-            border-radius: 6px;
-            font-size: 0.9em;
-            text-align: center;
         }
 
         /* Scroll Animations */
@@ -272,25 +238,24 @@
             </div>
         </div>
 
-        <!-- Contact & Interactive Message Box -->
+        <!-- Direct Contact Box -->
         <div class="contact-box info-card">
             <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
-            <p>For any questions, comments, or feedback, feel free to reach out directly:</p>
+            <p>For any questions, comments, or thoughts, feel free to send an email directly:</p>
             
-            <button type="button" class="email-display-btn" id="copyEmailBtn">
-                <i class="fas fa-paper-plane"></i>
-                <span id="emailText">consano.awareness@gmail.com</span>
-                <i class="fas fa-copy" style="font-size: 0.85em; color: #888;"></i>
-            </button>
+            <div class="email-action-group">
+                <!-- Direct Mailto Link -->
+                <a href="mailto:consano.awareness@gmail.com?subject=Consano%20Website%20Inquiry" class="email-btn email-btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Send Email</span>
+                </a>
 
-            <!-- Quick Inquiry Form -->
-            <form class="contact-form" id="aboutContactForm">
-                <input type="text" id="senderName" placeholder="Your Name or Nickname (Optional)">
-                <input type="email" id="senderEmail" placeholder="Your Email (Optional, if you want a reply)">
-                <textarea id="senderMessage" placeholder="Share your thoughts, feedback, or questions..." required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div id="toastMsg">Thank you for reaching out! Your message has been submitted.</div>
+                <!-- Click-to-Copy Button -->
+                <button type="button" class="email-btn" id="copyEmailBtn">
+                    <i class="fas fa-copy" style="color: #888;"></i>
+                    <span id="emailText">consano.awareness@gmail.com</span>
+                </button>
+            </div>
         </div>
 
     </div>
@@ -312,29 +277,16 @@
 
             // Copy Email Functionality
             const copyBtn = document.getElementById('copyEmailBtn');
-            const emailText = document.getElementById('emailText').innerText;
+            const emailAddress = "consano.awareness@gmail.com";
 
             copyBtn.addEventListener('click', () => {
-                navigator.clipboard.writeText(emailText).then(() => {
-                    const originalText = copyBtn.innerHTML;
-                    copyBtn.innerHTML = `<i class="fas fa-check" style="color: #2e7d32;"></i> Copied to Clipboard!`;
+                navigator.clipboard.writeText(emailAddress).then(() => {
+                    const originalContent = copyBtn.innerHTML;
+                    copyBtn.innerHTML = `<i class="fas fa-check" style="color: #2e7d32;"></i> <span>Copied!</span>`;
                     setTimeout(() => {
-                        copyBtn.innerHTML = originalText;
+                        copyBtn.innerHTML = originalContent;
                     }, 2000);
                 });
-            });
-
-            // Contact Form Feedback Handler
-            const form = document.getElementById('aboutContactForm');
-            const toast = document.getElementById('toastMsg');
-
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                toast.style.display = 'block';
-                form.reset();
-                setTimeout(() => {
-                    toast.style.display = 'none';
-                }, 4000);
             });
         });
     </script>
